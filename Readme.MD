@@ -9,4 +9,5 @@ The repository contains several folders:
 - **tasks/lib** - contains libraries that implement the method described in the article and library for easy loading testing datasets
 - **results** - contains results of the procedure runs 
 
+The root contains a licence file as well as requirements.txt, that allows an easy install of all required libraries by *pip install -r requirements.txt*
 
