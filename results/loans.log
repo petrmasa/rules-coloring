@@ -1,0 +1,227 @@
+Automatically reordering numeric categories ...done
+Cleverminer version  1.0.12
+Cleverminer version 1.0.12.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+WARNING: attribute loan_id has more than 100 values, will be ignored.
+ If you haven't set maximum number of categories and you really need more categories and you know what you are doing, please use max_categories option to increase allowed number of categories.
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  4%|##                                                  |Elapsed Time: 0:00:00
+  6%|###                                                 |Elapsed Time: 0:00:00
+  8%|####                                                |Elapsed Time: 0:00:00
+ 11%|#####                                               |Elapsed Time: 0:00:00
+ 13%|######                                              |Elapsed Time: 0:00:00
+ 14%|#######                                             |Elapsed Time: 0:00:00
+ 15%|#######                                             |Elapsed Time: 0:00:00
+ 19%|##########                                          |Elapsed Time: 0:00:00
+ 21%|##########                                          |Elapsed Time: 0:00:00
+ 22%|###########                                         |Elapsed Time: 0:00:00
+ 23%|############                                        |Elapsed Time: 0:00:01
+ 25%|#############                                       |Elapsed Time: 0:00:01
+ 26%|#############                                       |Elapsed Time: 0:00:01
+ 31%|################                                    |Elapsed Time: 0:00:01
+ 41%|#####################                               |Elapsed Time: 0:00:01
+100%|####################################################|Elapsed Time: 0:00:01
+Done. Total verifications : 11392, rules 55, times: prep 0.05sec, processing 1.37sec
+Variable  no_of_dependents has 5 categories: <0,0.1> (0.1,1> (1,2> (2,3> (3,100000>
+Variable  education has 2 categories:  Graduate  Not Graduate
+Variable  self_employed has 2 categories:  No  Yes
+Variable  income_annum has 5 categories: (199999.999, 2200000.0] (2200000.0, 4100000.0] (4100000.0, 6000000.0] (6000000.0, 8000000.0] (8000000.0, 9900000.0]
+Variable  loan_amount has 5 categories: (299999.999, 6200000.0] (6200000.0, 11800000.0] (11800000.0, 17480000.0] (17480000.0, 23400000.0] (23400000.0, 39500000.0]
+Variable  loan_term has 5 categories: (1.999, 6.0] (6.0, 8.0] (8.0, 12.0] (12.0, 16.0] (16.0, 20.0]
+Variable  cibil_score has 5 categories: (299.999, 421.0] (421.0, 541.0] (541.0, 663.0] (663.0, 778.0] (778.0, 900.0]
+Variable  residential_assets_value has 5 categories: (-100000.001, 1600000.0] (1600000.0, 4100000.0] (4100000.0, 7600000.0] (7600000.0, 12940000.0] (12940000.0, 29100000.0]
+Variable  commercial_assets_value has 5 categories: (-0.001, 1000000.0] (1000000.0, 2600000.0] (2600000.0, 5000000.0] (5000000.0, 8800000.0] (8800000.0, 19400000.0]
+Variable  luxury_assets_value has 5 categories: (299999.999, 6100000.0] (6100000.0, 11800000.0] (11800000.0, 17300000.0] (17300000.0, 23400000.0] (23400000.0, 39200000.0]
+Variable  bank_asset_value has 5 categories: (-0.001, 1900000.0] (1900000.0, 3700000.0] (3700000.0, 5500000.0] (5500000.0, 7800000.0] (7800000.0, 14700000.0]
+Variable  loan_status has 2 categories:  Approved  Rejected
+
+List of rules:
+RULEID BASE  CONF  AAD    Rule
+     1    68 0.800 +0.286  no_of_dependents(<0,0.1>) &  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0]) &  loan_amount((299999.999, 6200000.0] (6200000.0, 11800000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+     2    75 0.815 +0.310  no_of_dependents(<0,0.1>) &  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0]) &  loan_amount((299999.999, 6200000.0] (6200000.0, 11800000.0] (11800000.0, 17480000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+     3    75 0.815 +0.310  no_of_dependents(<0,0.1>) &  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+     4    58 0.806 +0.295  no_of_dependents(<0,0.1>) &  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0] (4100000.0, 6000000.0]) &  loan_amount((6200000.0, 11800000.0] (11800000.0, 17480000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+     5    72 0.818 +0.315  no_of_dependents(<0,0.1>) &  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0] (4100000.0, 6000000.0]) &  loan_amount((6200000.0, 11800000.0] (11800000.0, 17480000.0] (17480000.0, 23400000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+     6   109 0.807 +0.298  no_of_dependents(<0,0.1>) &  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0] (4100000.0, 6000000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+     7    60 0.833 +0.339  no_of_dependents(<0,0.1>) &  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0] (4100000.0, 6000000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) =>  loan_status( Approved) | ---
+     8    67 0.807 +0.297  no_of_dependents(<0,0.1>) &  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0] (4100000.0, 6000000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((-100000.001, 1600000.0] (1600000.0, 4100000.0]) =>  loan_status( Approved) | ---
+     9    52 0.800 +0.286  no_of_dependents(<0,0.1>) &  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0] (4100000.0, 6000000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((1600000.0, 4100000.0] (4100000.0, 7600000.0]) =>  loan_status( Approved) | ---
+    10    70 0.824 +0.324  no_of_dependents(<0,0.1>) &  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0] (4100000.0, 6000000.0] (6000000.0, 8000000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) =>  loan_status( Approved) | ---
+    11    62 0.805 +0.294  no_of_dependents(<0,0.1>) &  income_annum((2200000.0, 4100000.0] (4100000.0, 6000000.0]) &  loan_amount((6200000.0, 11800000.0] (11800000.0, 17480000.0] (17480000.0, 23400000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+    12    51 0.823 +0.322  no_of_dependents(<0,0.1>) &  income_annum((2200000.0, 4100000.0] (4100000.0, 6000000.0] (6000000.0, 8000000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) =>  loan_status( Approved) | ---
+    13    50 0.806 +0.296  no_of_dependents(<0,0.1>) &  loan_amount((299999.999, 6200000.0] (6200000.0, 11800000.0] (11800000.0, 17480000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) =>  loan_status( Approved) | ---
+    14    50 0.847 +0.362  no_of_dependents((1,2>) &  income_annum((6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  residential_assets_value((7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    15    52 0.839 +0.348  no_of_dependents((1,2>) &  loan_amount((11800000.0, 17480000.0] (17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((4100000.0, 7600000.0] (7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    16    80 0.816 +0.312  no_of_dependents((2,3>) &  income_annum((2200000.0, 4100000.0] (4100000.0, 6000000.0] (6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+    17    80 0.816 +0.312  no_of_dependents((2,3>) &  income_annum((4100000.0, 6000000.0] (6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+    18    54 0.831 +0.335  no_of_dependents((2,3>) &  income_annum((4100000.0, 6000000.0] (6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) =>  loan_status( Approved) | ---
+    19    66 0.825 +0.326  no_of_dependents((2,3>) &  income_annum((6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+    20    54 0.831 +0.335  no_of_dependents((2,3>) &  loan_amount((11800000.0, 17480000.0] (17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) =>  loan_status( Approved) | ---
+    21    80 0.816 +0.312  no_of_dependents((2,3>) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+    22    55 0.809 +0.300  no_of_dependents((2,3>) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((7600000.0, 12940000.0] (12940000.0, 29100000.0]) =>  loan_status( Approved) | ---
+    23    75 0.815 +0.310  no_of_dependents((3,100000>) &  income_annum((2200000.0, 4100000.0] (4100000.0, 6000000.0]) &  loan_term((1.999, 6.0]) &  education( Not Graduate) =>  loan_status( Approved) | ---
+    24    52 0.812 +0.306  no_of_dependents((3,100000>) &  loan_amount((6200000.0, 11800000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((4100000.0, 7600000.0] (7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    25    77 0.802 +0.289  no_of_dependents((3,100000>) &  loan_term((1.999, 6.0]) &  education( Not Graduate) &  residential_assets_value((4100000.0, 7600000.0] (7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    26    53 0.855 +0.374  income_annum((199999.999, 2200000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) &  residential_assets_value((1600000.0, 4100000.0] (4100000.0, 7600000.0]) =>  loan_status( Approved) | ---
+    27    60 0.800 +0.286  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0]) &  loan_amount((6200000.0, 11800000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((4100000.0, 7600000.0]) =>  loan_status( Approved) | ---
+    28    51 0.836 +0.344  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0] (4100000.0, 6000000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+    29    99 0.805 +0.294  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0] (4100000.0, 6000000.0] (6000000.0, 8000000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((4100000.0, 7600000.0] (7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    30    59 0.819 +0.317  income_annum((199999.999, 2200000.0] (2200000.0, 4100000.0] (4100000.0, 6000000.0] (6000000.0, 8000000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    31    51 0.836 +0.344  income_annum((2200000.0, 4100000.0] (4100000.0, 6000000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+    32    99 0.805 +0.294  income_annum((2200000.0, 4100000.0] (4100000.0, 6000000.0] (6000000.0, 8000000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((4100000.0, 7600000.0] (7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    33    59 0.819 +0.317  income_annum((2200000.0, 4100000.0] (4100000.0, 6000000.0] (6000000.0, 8000000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    34   103 0.811 +0.304  income_annum((2200000.0, 4100000.0] (4100000.0, 6000000.0] (6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    35   106 0.815 +0.311  income_annum((2200000.0, 4100000.0] (4100000.0, 6000000.0] (6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) =>  loan_status( Approved) | ---
+    36    82 0.828 +0.331  income_annum((2200000.0, 4100000.0] (4100000.0, 6000000.0] (6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((4100000.0, 7600000.0] (7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    37    55 0.846 +0.360  income_annum((2200000.0, 4100000.0] (4100000.0, 6000000.0] (6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    38    51 0.836 +0.344  income_annum((4100000.0, 6000000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) =>  loan_status( Approved) | ---
+    39    99 0.805 +0.294  income_annum((4100000.0, 6000000.0] (6000000.0, 8000000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((4100000.0, 7600000.0] (7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    40    59 0.819 +0.317  income_annum((4100000.0, 6000000.0] (6000000.0, 8000000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    41   103 0.811 +0.304  income_annum((4100000.0, 6000000.0] (6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    42   106 0.815 +0.311  income_annum((4100000.0, 6000000.0] (6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) =>  loan_status( Approved) | ---
+    43    82 0.828 +0.331  income_annum((4100000.0, 6000000.0] (6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((4100000.0, 7600000.0] (7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    44    55 0.846 +0.360  income_annum((4100000.0, 6000000.0] (6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    45   104 0.812 +0.306  income_annum((6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) =>  loan_status( Approved) | ---
+    46    81 0.827 +0.328  income_annum((6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((4100000.0, 7600000.0] (7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    47    55 0.846 +0.360  income_annum((6000000.0, 8000000.0] (8000000.0, 9900000.0]) &  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    48    68 0.819 +0.317  income_annum((8000000.0, 9900000.0]) &  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) =>  loan_status( Approved) | ---
+    49    83 0.814 +0.308  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) &  residential_assets_value((4100000.0, 7600000.0] (7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    50    54 0.806 +0.295  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  education( Not Graduate) &  residential_assets_value((7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    51   103 0.811 +0.304  loan_amount((17480000.0, 23400000.0] (23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    52   106 0.815 +0.311  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) =>  loan_status( Approved) | ---
+    53    76 0.809 +0.300  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) &  residential_assets_value((7600000.0, 12940000.0] (12940000.0, 29100000.0]) =>  loan_status( Approved) | ---
+    54    82 0.828 +0.331  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((4100000.0, 7600000.0] (7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+    55    55 0.846 +0.360  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  residential_assets_value((7600000.0, 12940000.0]) =>  loan_status( Approved) | ---
+
+
+CleverMiner task processing summary:
+
+Task type : 4ftMiner
+Number of verifications : 11392
+Number of rules : 55
+Total time needed : 00h 00m 01s
+Time of data preparation : 00h 00m 00s
+Time of rule mining : 00h 00m 01s
+
+
+
+Rule id : 53
+
+Base :    76  Relative base : 0.018  CONF : 0.809  AAD : +0.300  BAD : -0.300
+
+Cedents:
+  antecedent :  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) &  residential_assets_value((7600000.0, 12940000.0] (12940000.0, 29100000.0])
+  succcedent :  loan_status( Approved)
+  condition  : ---
+
+Fourfold table
+    |  S  |  ¬S |
+----|-----|-----|
+ A  |   76|   18|
+----|-----|-----|
+¬A  | 2580| 1595|
+----|-----|-----|
+
+
+
+Rule id : 53
+
+Base :    76  Relative base : 0.018  CONF : 0.809  AAD : +0.300  BAD : -0.300
+
+Cedents:
+  antecedent :  loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) &  residential_assets_value((7600000.0, 12940000.0] (12940000.0, 29100000.0])
+  succcedent :  loan_status( Approved)
+  condition  : ---
+
+Fourfold table
+    |  S  |  ¬S |
+----|-----|-----|
+ A  |   76|   18|
+----|-----|-----|
+¬A  | 2580| 1595|
+----|-----|-----|
+
+
+Detailed analysis of rule 53:   loan_amount((23400000.0, 39500000.0]) &  loan_term((1.999, 6.0]) &  education( Graduate) &  residential_assets_value((7600000.0, 12940000.0] (12940000.0, 29100000.0]) =>  loan_status( Approved) | ---
+   When Var [0;31m loan_amount[0m is ignored: confidence [0;31m0.809 -> 0.707, base 76 -> 191[0m, pval 0.97190, z_score 1.910, pimratioabs 1.143
+   ... varname's  loan_amount category (23400000.0, 39500000.0] cannot be ignored due to either single category or the ordinal data type and not eligible (middle) category cannot be thrown out
+   When Var [1;33m loan_term[0m is ignored: [1;33mconfidence 0.809 -> 0.643, base 76 -> 198[0m, pval 0.99873, z_score 3.018, pimratioabs 1.258
+   ... varname's  loan_term category (1.999, 6.0] cannot be ignored due to either single category or the ordinal data type and not eligible (middle) category cannot be thrown out
+   When Var [0;31m education[0m is ignored: confidence [0;31m0.809 -> 0.777, base 76 -> 139[0m, pval 0.73029, z_score 0.614, pimratioabs 1.041
+   ... varname's  education category  Graduate cannot be ignored due to either single category or the ordinal data type and not eligible (middle) category cannot be thrown out
+   When Var [0;31m residential_assets_value[0m is ignored: confidence [0;31m0.809 -> 0.815, base 76 -> 106[0m, pval 0.44825, z_score -0.130, pimratioabs 1.009
+   ... when varname's [0;31m residential_assets_value[0m category [0;31m(7600000.0, 12940000.0][0m ignored : confidence [0;31m0.809 -> 0.780, base 76 -> 46[0m, pval 0.66718, z_score 0.432, pimratioabs 1.037
+   ... when varname's [0;31m residential_assets_value[0m category [0;31m(12940000.0, 29100000.0][0m ignored : confidence [0;31m0.809 -> 0.857, base 76 -> 30[0m, pval 0.26055, z_score -0.642, pimratioabs 1.060
+   When Var [0;32m loan_status[0m is ignored: [0;32mconfidence 0.809 -> 1.000, base 76 -> 94[0m, pval 0.00000, z_score -4.462, pimratioabs 1.237
+   ... varname's  loan_status category  Approved cannot be ignored due to either single category or the ordinal data type and not eligible (middle) category cannot be thrown out
+Colored rule is [0;31m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) & [0;31m residential_assets_value[0m([0;31m(7600000.0, 12940000.0][0m [0;31m(12940000.0, 29100000.0][0m) => [0;32m loan_status[0m( Approved) | 
+
+LEGEND: 
+  [0;32mATTRIBUTE/VALUE IS VERY IMPORTANT FOR INTERPRETATION AND CANNOT BE IGNORED[0m
+  [1;33mATTRIBUTE/VALUE IS SIGNIFICANT FOR INTERPRETATION[0m
+  [0;31mATTRIBUTE/VALUE SHOULD NOT BE USED IN INTERPRETATION AND CAN BE IGNORED[0m
+  VALUE IS NOT ELIGIBLE FOR ASSESSING THE IMPORTANCE (E.G. A MIDDLE CATEGORY OF AN ORDINAL SEQUENCE)
+
+ RULE_ID BASE  CONF   AAD   RULE_TEXT
+       1    68 0.800 +0.286 [0;31m no_of_dependents[0m(<0,0.1>) & [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m [0;31m(2200000.0, 4100000.0][0m) & [0;31m loan_amount[0m([0;31m(299999.999, 6200000.0][0m [0;31m(6200000.0, 11800000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [0;32m loan_status[0m( Approved) | 
+       2    75 0.815 +0.310 [0;31m no_of_dependents[0m(<0,0.1>) & [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m [0;31m(2200000.0, 4100000.0][0m) & [0;31m loan_amount[0m([0;31m(299999.999, 6200000.0][0m (6200000.0, 11800000.0] [0;31m(11800000.0, 17480000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [0;32m loan_status[0m( Approved) | 
+       3    75 0.815 +0.310 [0;31m no_of_dependents[0m(<0,0.1>) & [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m [0;31m(2200000.0, 4100000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [0;32m loan_status[0m( Approved) | 
+       4    58 0.806 +0.295 [0;31m no_of_dependents[0m(<0,0.1>) & [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m (2200000.0, 4100000.0] [0;31m(4100000.0, 6000000.0][0m) & [0;31m loan_amount[0m([0;31m(6200000.0, 11800000.0][0m [0;31m(11800000.0, 17480000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [0;32m loan_status[0m( Approved) | 
+       5    72 0.818 +0.315 [0;31m no_of_dependents[0m(<0,0.1>) & [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m (2200000.0, 4100000.0] [0;31m(4100000.0, 6000000.0][0m) & [0;31m loan_amount[0m([0;31m(6200000.0, 11800000.0][0m (11800000.0, 17480000.0] [0;31m(17480000.0, 23400000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [0;32m loan_status[0m( Approved) | 
+       6   109 0.807 +0.298 [0;31m no_of_dependents[0m(<0,0.1>) & [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m (2200000.0, 4100000.0] [0;31m(4100000.0, 6000000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [0;32m loan_status[0m( Approved) | 
+       7    60 0.833 +0.339 [0;31m no_of_dependents[0m(<0,0.1>) & [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m (2200000.0, 4100000.0] [0;31m(4100000.0, 6000000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) => [1;33m loan_status[0m( Approved) | 
+       8    67 0.807 +0.297 [0;31m no_of_dependents[0m(<0,0.1>) & [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m (2200000.0, 4100000.0] [0;31m(4100000.0, 6000000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m([0;31m(-100000.001, 1600000.0][0m [0;31m(1600000.0, 4100000.0][0m) => [0;32m loan_status[0m( Approved) | 
+       9    52 0.800 +0.286 [0;31m no_of_dependents[0m(<0,0.1>) & [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m (2200000.0, 4100000.0] [0;31m(4100000.0, 6000000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m([0;31m(1600000.0, 4100000.0][0m [0;31m(4100000.0, 7600000.0][0m) => [1;33m loan_status[0m( Approved) | 
+      10    70 0.824 +0.324 [0;31m no_of_dependents[0m(<0,0.1>) & [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m (2200000.0, 4100000.0] (4100000.0, 6000000.0] [0;31m(6000000.0, 8000000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) => [0;32m loan_status[0m( Approved) | 
+      11    62 0.805 +0.294 [0;31m no_of_dependents[0m(<0,0.1>) & [0;31m income_annum[0m([0;31m(2200000.0, 4100000.0][0m [0;31m(4100000.0, 6000000.0][0m) & [0;31m loan_amount[0m([0;31m(6200000.0, 11800000.0][0m (11800000.0, 17480000.0] [0;31m(17480000.0, 23400000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [0;32m loan_status[0m( Approved) | 
+      12    51 0.823 +0.322 [0;31m no_of_dependents[0m(<0,0.1>) & [0;31m income_annum[0m([0;31m(2200000.0, 4100000.0][0m (4100000.0, 6000000.0] [0;31m(6000000.0, 8000000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) => [1;33m loan_status[0m( Approved) | 
+      13    50 0.806 +0.296 [0;31m no_of_dependents[0m(<0,0.1>) & [0;31m loan_amount[0m([0;31m(299999.999, 6200000.0][0m (6200000.0, 11800000.0] [0;31m(11800000.0, 17480000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) => [1;33m loan_status[0m( Approved) | 
+      14    50 0.847 +0.362 [1;33m no_of_dependents[0m((1,2>) & [0;31m income_annum[0m([0;31m(6000000.0, 8000000.0][0m [0;31m(8000000.0, 9900000.0][0m) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m residential_assets_value[0m((7600000.0, 12940000.0]) => [1;33m loan_status[0m( Approved) | 
+      15    52 0.839 +0.348 [0;31m no_of_dependents[0m((1,2>) & [0;31m loan_amount[0m([0;31m(11800000.0, 17480000.0][0m (17480000.0, 23400000.0] [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [1;33m residential_assets_value[0m([0;31m(4100000.0, 7600000.0][0m [0;31m(7600000.0, 12940000.0][0m) => [1;33m loan_status[0m( Approved) | 
+      16    80 0.816 +0.312 [0;31m no_of_dependents[0m((2,3>) & [0;31m income_annum[0m([0;31m(2200000.0, 4100000.0][0m (4100000.0, 6000000.0] (6000000.0, 8000000.0] [0;31m(8000000.0, 9900000.0][0m) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [0;32m loan_status[0m( Approved) | 
+      17    80 0.816 +0.312 [0;31m no_of_dependents[0m((2,3>) & [0;31m income_annum[0m([0;31m(4100000.0, 6000000.0][0m (6000000.0, 8000000.0] [0;31m(8000000.0, 9900000.0][0m) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [0;32m loan_status[0m( Approved) | 
+      18    54 0.831 +0.335 [1;33m no_of_dependents[0m((2,3>) & [0;31m income_annum[0m([0;31m(4100000.0, 6000000.0][0m (6000000.0, 8000000.0] [0;31m(8000000.0, 9900000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) => [1;33m loan_status[0m( Approved) | 
+      19    66 0.825 +0.326 [1;33m no_of_dependents[0m((2,3>) & [0;31m income_annum[0m([0;31m(6000000.0, 8000000.0][0m [0;31m(8000000.0, 9900000.0][0m) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [1;33m loan_status[0m( Approved) | 
+      20    54 0.831 +0.335 [1;33m no_of_dependents[0m((2,3>) & [0;31m loan_amount[0m([0;31m(11800000.0, 17480000.0][0m (17480000.0, 23400000.0] [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) => [1;33m loan_status[0m( Approved) | 
+      21    80 0.816 +0.312 [0;31m no_of_dependents[0m((2,3>) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [0;32m loan_status[0m( Approved) | 
+      22    55 0.809 +0.300 [0;31m no_of_dependents[0m((2,3>) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m([0;31m(7600000.0, 12940000.0][0m [0;31m(12940000.0, 29100000.0][0m) => [1;33m loan_status[0m( Approved) | 
+      23    75 0.815 +0.310 [0;31m no_of_dependents[0m((3,100000>) & [0;31m income_annum[0m([0;31m(2200000.0, 4100000.0][0m [0;31m(4100000.0, 6000000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Not Graduate) => [0;32m loan_status[0m( Approved) | 
+      24    52 0.812 +0.306 [0;31m no_of_dependents[0m((3,100000>) & [0;31m loan_amount[0m((6200000.0, 11800000.0]) & [0;31m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m([0;31m(4100000.0, 7600000.0][0m [0;31m(7600000.0, 12940000.0][0m) => [1;33m loan_status[0m( Approved) | 
+      25    77 0.802 +0.289 [0;31m no_of_dependents[0m((3,100000>) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Not Graduate) & [0;31m residential_assets_value[0m([0;31m(4100000.0, 7600000.0][0m [0;31m(7600000.0, 12940000.0][0m) => [0;32m loan_status[0m( Approved) | 
+      26    53 0.855 +0.374 [1;33m income_annum[0m((199999.999, 2200000.0]) & [0;31m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) & [0;31m residential_assets_value[0m([0;31m(1600000.0, 4100000.0][0m [0;31m(4100000.0, 7600000.0][0m) => [1;33m loan_status[0m( Approved) | 
+      27    60 0.800 +0.286 [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m [0;31m(2200000.0, 4100000.0][0m) & [0;31m loan_amount[0m((6200000.0, 11800000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m((4100000.0, 7600000.0]) => [0;32m loan_status[0m( Approved) | 
+      28    51 0.836 +0.344 [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m (2200000.0, 4100000.0] [0;31m(4100000.0, 6000000.0][0m) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [1;33m loan_status[0m( Approved) | 
+      29    99 0.805 +0.294 [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m (2200000.0, 4100000.0] (4100000.0, 6000000.0] [0;31m(6000000.0, 8000000.0][0m) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m([0;31m(4100000.0, 7600000.0][0m [0;31m(7600000.0, 12940000.0][0m) => [0;32m loan_status[0m( Approved) | 
+      30    59 0.819 +0.317 [0;31m income_annum[0m([0;31m(199999.999, 2200000.0][0m (2200000.0, 4100000.0] (4100000.0, 6000000.0] [0;31m(6000000.0, 8000000.0][0m) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m((7600000.0, 12940000.0]) => [1;33m loan_status[0m( Approved) | 
+      31    51 0.836 +0.344 [0;31m income_annum[0m([0;31m(2200000.0, 4100000.0][0m [0;31m(4100000.0, 6000000.0][0m) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [1;33m loan_status[0m( Approved) | 
+      32    99 0.805 +0.294 [0;31m income_annum[0m([0;31m(2200000.0, 4100000.0][0m (4100000.0, 6000000.0] [0;31m(6000000.0, 8000000.0][0m) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m([0;31m(4100000.0, 7600000.0][0m [0;31m(7600000.0, 12940000.0][0m) => [0;32m loan_status[0m( Approved) | 
+      33    59 0.819 +0.317 [0;31m income_annum[0m([0;31m(2200000.0, 4100000.0][0m (4100000.0, 6000000.0] [0;31m(6000000.0, 8000000.0][0m) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m((7600000.0, 12940000.0]) => [1;33m loan_status[0m( Approved) | 
+      34   103 0.811 +0.304 [0;31m income_annum[0m([0;31m(2200000.0, 4100000.0][0m (4100000.0, 6000000.0] (6000000.0, 8000000.0] [0;31m(8000000.0, 9900000.0][0m) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m((7600000.0, 12940000.0]) => [0;32m loan_status[0m( Approved) | 
+      35   106 0.815 +0.311 [0;31m income_annum[0m([0;31m(2200000.0, 4100000.0][0m (4100000.0, 6000000.0] (6000000.0, 8000000.0] [0;31m(8000000.0, 9900000.0][0m) & [1;33m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) => [0;32m loan_status[0m( Approved) | 
+      36    82 0.828 +0.331 [0;31m income_annum[0m([0;31m(2200000.0, 4100000.0][0m (4100000.0, 6000000.0] (6000000.0, 8000000.0] [0;31m(8000000.0, 9900000.0][0m) & [1;33m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m([0;31m(4100000.0, 7600000.0][0m [0;31m(7600000.0, 12940000.0][0m) => [0;32m loan_status[0m( Approved) | 
+      37    55 0.846 +0.360 [0;31m income_annum[0m([0;31m(2200000.0, 4100000.0][0m (4100000.0, 6000000.0] (6000000.0, 8000000.0] [0;31m(8000000.0, 9900000.0][0m) & [0;31m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m((7600000.0, 12940000.0]) => [1;33m loan_status[0m( Approved) | 
+      38    51 0.836 +0.344 [0;31m income_annum[0m((4100000.0, 6000000.0]) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) => [1;33m loan_status[0m( Approved) | 
+      39    99 0.805 +0.294 [0;31m income_annum[0m([0;31m(4100000.0, 6000000.0][0m [0;31m(6000000.0, 8000000.0][0m) & [1;33m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m([0;31m(4100000.0, 7600000.0][0m [0;31m(7600000.0, 12940000.0][0m) => [0;32m loan_status[0m( Approved) | 
+      40    59 0.819 +0.317 [0;31m income_annum[0m([0;31m(4100000.0, 6000000.0][0m [0;31m(6000000.0, 8000000.0][0m) & [1;33m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m((7600000.0, 12940000.0]) => [1;33m loan_status[0m( Approved) | 
+      41   103 0.811 +0.304 [0;31m income_annum[0m([0;31m(4100000.0, 6000000.0][0m (6000000.0, 8000000.0] [0;31m(8000000.0, 9900000.0][0m) & [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m((7600000.0, 12940000.0]) => [0;32m loan_status[0m( Approved) | 
+      42   106 0.815 +0.311 [0;31m income_annum[0m([0;31m(4100000.0, 6000000.0][0m (6000000.0, 8000000.0] [0;31m(8000000.0, 9900000.0][0m) & [1;33m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) => [0;32m loan_status[0m( Approved) | 
+      43    82 0.828 +0.331 [0;31m income_annum[0m([0;31m(4100000.0, 6000000.0][0m (6000000.0, 8000000.0] [0;31m(8000000.0, 9900000.0][0m) & [1;33m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m([0;31m(4100000.0, 7600000.0][0m [0;31m(7600000.0, 12940000.0][0m) => [0;32m loan_status[0m( Approved) | 
+      44    55 0.846 +0.360 [0;31m income_annum[0m([0;31m(4100000.0, 6000000.0][0m (6000000.0, 8000000.0] [0;31m(8000000.0, 9900000.0][0m) & [1;33m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m((7600000.0, 12940000.0]) => [1;33m loan_status[0m( Approved) | 
+      45   104 0.812 +0.306 [0;31m income_annum[0m([0;31m(6000000.0, 8000000.0][0m [0;31m(8000000.0, 9900000.0][0m) & [1;33m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) => [0;32m loan_status[0m( Approved) | 
+      46    81 0.827 +0.328 [0;31m income_annum[0m([0;31m(6000000.0, 8000000.0][0m [0;31m(8000000.0, 9900000.0][0m) & [0;31m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m([0;31m(4100000.0, 7600000.0][0m [0;31m(7600000.0, 12940000.0][0m) => [0;32m loan_status[0m( Approved) | 
+      47    55 0.846 +0.360 [0;31m income_annum[0m([0;31m(6000000.0, 8000000.0][0m [0;31m(8000000.0, 9900000.0][0m) & [0;31m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m((7600000.0, 12940000.0]) => [1;33m loan_status[0m( Approved) | 
+      48    68 0.819 +0.317 [0;31m income_annum[0m((8000000.0, 9900000.0]) & [0;31m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) => [0;32m loan_status[0m( Approved) | 
+      49    83 0.814 +0.308 [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) & [0;31m residential_assets_value[0m([0;31m(4100000.0, 7600000.0][0m [0;31m(7600000.0, 12940000.0][0m) => [0;32m loan_status[0m( Approved) | 
+      50    54 0.806 +0.295 [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Not Graduate) & [0;31m residential_assets_value[0m((7600000.0, 12940000.0]) => [1;33m loan_status[0m( Approved) | 
+      51   103 0.811 +0.304 [0;31m loan_amount[0m([0;31m(17480000.0, 23400000.0][0m [0;31m(23400000.0, 39500000.0][0m) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m((7600000.0, 12940000.0]) => [0;32m loan_status[0m( Approved) | 
+      52   106 0.815 +0.311 [1;33m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) => [0;32m loan_status[0m( Approved) | 
+      53    76 0.809 +0.300 [0;31m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m education[0m( Graduate) & [0;31m residential_assets_value[0m([0;31m(7600000.0, 12940000.0][0m [0;31m(12940000.0, 29100000.0][0m) => [0;32m loan_status[0m( Approved) | 
+      54    82 0.828 +0.331 [1;33m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m([0;31m(4100000.0, 7600000.0][0m [0;31m(7600000.0, 12940000.0][0m) => [0;32m loan_status[0m( Approved) | 
+      55    55 0.846 +0.360 [0;31m loan_amount[0m((23400000.0, 39500000.0]) & [1;33m loan_term[0m((1.999, 6.0]) & [0;31m residential_assets_value[0m((7600000.0, 12940000.0]) => [1;33m loan_status[0m( Approved) | 

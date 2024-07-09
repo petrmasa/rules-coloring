@@ -1,0 +1,274 @@
+Automatically reordering numeric categories ...done
+Cleverminer version  1.0.12
+Cleverminer version 1.0.12.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  0%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  1%|#                                                   |Elapsed Time: 0:00:00
+  1%|#                                                   |Elapsed Time: 0:00:00
+  1%|#                                                   |Elapsed Time: 0:00:00
+  1%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:01
+  2%|#                                                   |Elapsed Time: 0:00:01
+  2%|#                                                   |Elapsed Time: 0:00:01
+  2%|#                                                   |Elapsed Time: 0:00:01
+  3%|#                                                   |Elapsed Time: 0:00:01
+  3%|#                                                   |Elapsed Time: 0:00:01
+  3%|#                                                   |Elapsed Time: 0:00:01
+  3%|#                                                   |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:02
+  4%|##                                                  |Elapsed Time: 0:00:02
+  4%|##                                                  |Elapsed Time: 0:00:02
+  4%|##                                                  |Elapsed Time: 0:00:02
+  5%|##                                                  |Elapsed Time: 0:00:02
+  5%|##                                                  |Elapsed Time: 0:00:02
+  5%|##                                                  |Elapsed Time: 0:00:02
+  5%|###                                                 |Elapsed Time: 0:00:02
+  5%|###                                                 |Elapsed Time: 0:00:02
+  5%|###                                                 |Elapsed Time: 0:00:02
+  5%|###                                                 |Elapsed Time: 0:00:03
+  6%|###                                                 |Elapsed Time: 0:00:03
+  6%|###                                                 |Elapsed Time: 0:00:03
+  6%|###                                                 |Elapsed Time: 0:00:03
+  6%|###                                                 |Elapsed Time: 0:00:03
+  6%|###                                                 |Elapsed Time: 0:00:03
+  6%|###                                                 |Elapsed Time: 0:00:03
+  6%|###                                                 |Elapsed Time: 0:00:03
+  6%|###                                                 |Elapsed Time: 0:00:03
+  7%|###                                                 |Elapsed Time: 0:00:03
+  7%|###                                                 |Elapsed Time: 0:00:04
+  7%|####                                                |Elapsed Time: 0:00:04
+  7%|####                                                |Elapsed Time: 0:00:04
+  8%|####                                                |Elapsed Time: 0:00:04
+  8%|####                                                |Elapsed Time: 0:00:04
+  8%|####                                                |Elapsed Time: 0:00:04
+  8%|####                                                |Elapsed Time: 0:00:04
+  8%|####                                                |Elapsed Time: 0:00:04
+  8%|####                                                |Elapsed Time: 0:00:04
+  8%|####                                                |Elapsed Time: 0:00:04
+  9%|####                                                |Elapsed Time: 0:00:05
+  9%|#####                                               |Elapsed Time: 0:00:05
+ 10%|#####                                               |Elapsed Time: 0:00:05
+ 10%|#####                                               |Elapsed Time: 0:00:05
+ 10%|#####                                               |Elapsed Time: 0:00:05
+ 10%|#####                                               |Elapsed Time: 0:00:05
+ 10%|#####                                               |Elapsed Time: 0:00:05
+ 10%|#####                                               |Elapsed Time: 0:00:05
+ 11%|#####                                               |Elapsed Time: 0:00:05
+ 11%|#####                                               |Elapsed Time: 0:00:05
+ 12%|######                                              |Elapsed Time: 0:00:06
+ 12%|######                                              |Elapsed Time: 0:00:06
+ 12%|######                                              |Elapsed Time: 0:00:06
+ 13%|######                                              |Elapsed Time: 0:00:06
+ 14%|#######                                             |Elapsed Time: 0:00:06
+ 14%|#######                                             |Elapsed Time: 0:00:06
+ 15%|########                                            |Elapsed Time: 0:00:06
+ 20%|##########                                          |Elapsed Time: 0:00:06
+ 22%|###########                                         |Elapsed Time: 0:00:06
+ 24%|############                                        |Elapsed Time: 0:00:06
+ 24%|############                                        |Elapsed Time: 0:00:06
+ 26%|##############                                      |Elapsed Time: 0:00:07
+ 29%|###############                                     |Elapsed Time: 0:00:07
+ 30%|###############                                     |Elapsed Time: 0:00:07
+ 31%|################                                    |Elapsed Time: 0:00:07
+ 35%|##################                                  |Elapsed Time: 0:00:07
+100%|####################################################|Elapsed Time: 0:00:07
+Done. Total verifications : 1906, rules 53, times: prep 1.82sec, processing 7.41sec
+
+List of rules:
+RULEID BASE  CONF  AAD    Rule
+     1  1293 0.046 +1.401 Driver_Age_Band(16 - 20 21 - 25 26 - 35 36 - 45) & Speed_limit(50 60 70) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+     2  1207 0.046 +1.379 Driver_Age_Band(16 - 20 21 - 25 26 - 35 36 - 45) & Speed_limit(60 70) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+     3  1124 0.045 +1.366 Driver_Age_Band(21 - 25 26 - 35 36 - 45) & Speed_limit(50 60 70) & Light(6,Darkness - no lighting) => Severity(Fatal) | ---
+     4  1054 0.045 +1.359 Driver_Age_Band(21 - 25 26 - 35 36 - 45) & Speed_limit(60 70) & Light(6,Darkness - no lighting) => Severity(Fatal) | ---
+     5  1091 0.049 +1.559 Driver_Age_Band(21 - 25 26 - 35 36 - 45) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+     6  1162 0.045 +1.368 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Speed_limit(40 50 60) & Light(6,Darkness - no lighting) => Severity(Fatal) | ---
+     7  1115 0.045 +1.352 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Speed_limit(40 50 60) & Light(6,Darkness - no lighting) & Road_Type(6,Single carriageway) => Severity(Fatal) | ---
+     8  1026 0.053 +1.752 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Speed_limit(40 50 60) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+     9  1068 0.045 +1.365 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Speed_limit(50 60) & Light(6,Darkness - no lighting) => Severity(Fatal) | ---
+    10  1024 0.045 +1.347 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Speed_limit(50 60) & Light(6,Darkness - no lighting) & Road_Type(6,Single carriageway) => Severity(Fatal) | ---
+    11  1381 0.048 +1.512 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Speed_limit(50 60 70) & Light(6,Darkness - no lighting) => Severity(Fatal) | ---
+    12  1038 0.050 +1.597 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Speed_limit(50 60 70) & Light(6,Darkness - no lighting) & Journey(5 Other/Not known) => Severity(Fatal) | ---
+    13  1025 0.045 +1.348 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Speed_limit(50 60 70) & Light(6,Darkness - no lighting) & Road_Type(6,Single carriageway) => Severity(Fatal) | ---
+    14  1204 0.056 +1.907 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Speed_limit(50 60 70) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+    15  1291 0.048 +1.496 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Speed_limit(60 70) & Light(6,Darkness - no lighting) => Severity(Fatal) | ---
+    16  1119 0.055 +1.876 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Speed_limit(60 70) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+    17  1526 0.045 +1.346 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Light(6,Darkness - no lighting) => Severity(Fatal) | ---
+    18  1160 0.047 +1.433 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Light(6,Darkness - no lighting) & Journey(5 Other/Not known) => Severity(Fatal) | ---
+    19  1008 0.054 +1.796 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Light(6,Darkness - no lighting) & Journey(5 Other/Not known) & Sex(Male) => Severity(Fatal) | ---
+    20  1019 0.048 +1.511 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Light(6,Darkness - no lighting) & Road_Type(6,Single carriageway) & Sex(Male) => Severity(Fatal) | ---
+    21  1330 0.052 +1.697 Driver_Age_Band(21 - 25 26 - 35 36 - 45 46 - 55) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+    22  1065 0.046 +1.384 Driver_Age_Band(26 - 35 36 - 45 46 - 55) & Light(6,Darkness - no lighting) => Severity(Fatal) | ---
+    23  1111 0.052 +1.685 Driver_Age_Band(26 - 35 36 - 45 46 - 55 56 - 65) & Speed_limit(50 60 70) & Light(6,Darkness - no lighting) => Severity(Fatal) | ---
+    24  1037 0.051 +1.663 Driver_Age_Band(26 - 35 36 - 45 46 - 55 56 - 65) & Speed_limit(60 70) & Light(6,Darkness - no lighting) => Severity(Fatal) | ---
+    25  1222 0.048 +1.485 Driver_Age_Band(26 - 35 36 - 45 46 - 55 56 - 65) & Light(6,Darkness - no lighting) => Severity(Fatal) | ---
+    26  1065 0.054 +1.803 Driver_Age_Band(26 - 35 36 - 45 46 - 55 56 - 65) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+    27  1100 0.048 +1.475 Driver_Age_Band(36 - 45 46 - 55 56 - 65) & Speed_limit(50 60 70) & Journey(5 Other/Not known) & Sex(Male) => Severity(Fatal) | ---
+    28  1241 0.048 +1.494 Driver_Age_Band(36 - 45 46 - 55 56 - 65 66 - 75) & Speed_limit(50 60 70) & Journey(5 Other/Not known) & Sex(Male) => Severity(Fatal) | ---
+    29  1782 0.045 +1.366 Driver_Age_Band(36 - 45 46 - 55 56 - 65 66 - 75) & Speed_limit(50 60 70) & Sex(Male) => Severity(Fatal) | ---
+    30  1111 0.047 +1.445 Driver_Age_Band(36 - 45 46 - 55 56 - 65 66 - 75) & Speed_limit(60 70) & Journey(5 Other/Not known) & Sex(Male) => Severity(Fatal) | ---
+    31  1083 0.049 +1.534 Driver_Age_Band(46 - 55 56 - 65 66 - 75) & Speed_limit(50 60 70) & Sex(Male) => Severity(Fatal) | ---
+    32  1212 0.050 +1.593 Driver_Age_Band(46 - 55 56 - 65 66 - 75 Over 75) & Speed_limit(50 60 70) & Sex(Male) => Severity(Fatal) | ---
+    33  1079 0.049 +1.539 Driver_Age_Band(46 - 55 56 - 65 66 - 75 Over 75) & Speed_limit(60 70) & Sex(Male) => Severity(Fatal) | ---
+    34  1201 0.049 +1.546 Speed_limit(40 50 60) & Light(6,Darkness - no lighting) & Journey(5 Other/Not known) & Sex(Male) => Severity(Fatal) | ---
+    35  1420 0.047 +1.466 Speed_limit(40 50 60) & Light(6,Darkness - no lighting) & Road_Type(6,Single carriageway) & Sex(Male) => Severity(Fatal) | ---
+    36  1480 0.048 +1.490 Speed_limit(40 50 60) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+    37  1095 0.049 +1.527 Speed_limit(50 60) & Light(6,Darkness - no lighting) & Journey(5 Other/Not known) & Sex(Male) => Severity(Fatal) | ---
+    38  1304 0.047 +1.462 Speed_limit(50 60) & Light(6,Darkness - no lighting) & Road_Type(6,Single carriageway) & Sex(Male) => Severity(Fatal) | ---
+    39  1358 0.048 +1.484 Speed_limit(50 60) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+    40  1322 0.051 +1.642 Speed_limit(50 60 70) & Light(6,Darkness - no lighting) & Journey(5 Other/Not known) & Sex(Male) => Severity(Fatal) | ---
+    41  1307 0.047 +1.466 Speed_limit(50 60 70) & Light(6,Darkness - no lighting) & Road_Type(6,Single carriageway) & Sex(Male) => Severity(Fatal) | ---
+    42  1702 0.051 +1.649 Speed_limit(50 60 70) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+    43  1182 0.046 +1.378 Speed_limit(50 60 70) & Road_Type(3,Dual carriageway) & Sex(Male) => Severity(Fatal) | ---
+    44  1006 0.048 +1.486 Speed_limit(60) & Light(6,Darkness - no lighting) & Journey(5 Other/Not known) & Sex(Male) => Severity(Fatal) | ---
+    45  1197 0.046 +1.414 Speed_limit(60) & Light(6,Darkness - no lighting) & Road_Type(6,Single carriageway) & Sex(Male) => Severity(Fatal) | ---
+    46  1238 0.047 +1.431 Speed_limit(60) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+    47  1233 0.050 +1.613 Speed_limit(60 70) & Light(6,Darkness - no lighting) & Journey(5 Other/Not known) & Sex(Male) => Severity(Fatal) | ---
+    48  1200 0.046 +1.419 Speed_limit(60 70) & Light(6,Darkness - no lighting) & Road_Type(6,Single carriageway) & Sex(Male) => Severity(Fatal) | ---
+    49  1582 0.050 +1.615 Speed_limit(60 70) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+    50  1033 0.045 +1.352 Speed_limit(60 70) & Road_Type(3,Dual carriageway) & Sex(Male) => Severity(Fatal) | ---
+    51  1222 0.045 +1.367 Light(6,Darkness - no lighting) & Journey(5 Other/Not known) & Road_Type(6,Single carriageway) & Sex(Male) => Severity(Fatal) | ---
+    52  1491 0.048 +1.488 Light(6,Darkness - no lighting) & Journey(5 Other/Not known) & Sex(Male) => Severity(Fatal) | ---
+    53  1897 0.048 +1.482 Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+
+
+CleverMiner task processing summary:
+
+Task type : 4ftMiner
+Number of verifications : 1906
+Number of rules : 53
+Total time needed : 00h 00m 09s
+Time of data preparation : 00h 00m 01s
+Time of rule mining : 00h 00m 07s
+
+
+
+Rule id : 1
+
+Base :  1293  Relative base : 0.002  CONF : 0.046  AAD : +1.401  BAD : -1.401
+
+Cedents:
+  antecedent : Driver_Age_Band(16 - 20 21 - 25 26 - 35 36 - 45) & Speed_limit(50 60 70) & Light(6,Darkness - no lighting) & Sex(Male)
+  succcedent : Severity(Fatal)
+  condition  : ---
+
+Fourfold table
+    |  S  |  ¬S |
+----|-----|-----|
+ A  | 1293|26756|
+----|-----|-----|
+¬A  | 9056|501884|
+----|-----|-----|
+
+
+
+Rule id : 1
+
+Base :  1293  Relative base : 0.002  CONF : 0.046  AAD : +1.401  BAD : -1.401
+
+Cedents:
+  antecedent : Driver_Age_Band(16 - 20 21 - 25 26 - 35 36 - 45) & Speed_limit(50 60 70) & Light(6,Darkness - no lighting) & Sex(Male)
+  succcedent : Severity(Fatal)
+  condition  : ---
+
+Fourfold table
+    |  S  |  ¬S |
+----|-----|-----|
+ A  | 1293|26756|
+----|-----|-----|
+¬A  | 9056|501884|
+----|-----|-----|
+
+
+Detailed analysis of rule 1:  Driver_Age_Band(16 - 20 21 - 25 26 - 35 36 - 45) & Speed_limit(50 60 70) & Light(6,Darkness - no lighting) & Sex(Male) => Severity(Fatal) | ---
+   When Var [1;33mDriver_Age_Band[0m is ignored: [1;33mconfidence 0.046 -> 0.051, base 1293 -> 1702[0m, pval 0.00312, z_score -2.735, pimratioabs 1.103
+   ... when varname's [1;33mDriver_Age_Band[0m category [1;33m16 - 20[0m ignored : confidence [1;33m0.046 -> 0.053, base 1293 -> 982[0m, pval 0.00050, z_score -3.291, pimratioabs 1.145
+   ... varname's Driver_Age_Band category 21 - 25 cannot be ignored due to either single category or the ordinal data type and not eligible (middle) category cannot be thrown out
+   ... varname's Driver_Age_Band category 26 - 35 cannot be ignored due to either single category or the ordinal data type and not eligible (middle) category cannot be thrown out
+   ... when varname's [0;31mDriver_Age_Band[0m category [0;31m36 - 45[0m ignored : confidence [0;31m0.046 -> 0.044, base 1293 -> 1025[0m, pval 0.90186, z_score 1.292, pimratioabs 1.054
+   When Var [0;31mSpeed_limit[0m is ignored: confidence [0;31m0.046 -> 0.043, base 1293 -> 1450[0m, pval 0.94683, z_score 1.615, pimratioabs 1.062
+   ... when varname's [0;31mSpeed_limit[0m category [0;31m50[0m ignored : confidence [0;31m0.046 -> 0.046, base 1293 -> 1207[0m, pval 0.59099, z_score 0.230, pimratioabs 1.009
+   ... varname's Speed_limit category 60 cannot be ignored due to either single category or the ordinal data type and not eligible (middle) category cannot be thrown out
+   ... when varname's [0;31mSpeed_limit[0m category [0;31m70[0m ignored : confidence [0;31m0.046 -> 0.044, base 1293 -> 1073[0m, pval 0.84529, z_score 1.016, pimratioabs 1.042
+   When Var [0;32mLight[0m is ignored: [0;32mconfidence 0.046 -> 0.035, base 1293 -> 2838[0m, pval 1.00000, z_score 8.072, pimratioabs 1.303
+   ... varname's Light category 6,Darkness - no lighting cannot be ignored due to either single category or the ordinal data type and not eligible (middle) category cannot be thrown out
+   When Var [0;32mSex[0m is ignored: [0;32mconfidence 0.046 -> 0.040, base 1293 -> 1502[0m, pval 0.99996, z_score 3.950, pimratioabs 1.158
+   ... varname's Sex category Male cannot be ignored due to either single category or the ordinal data type and not eligible (middle) category cannot be thrown out
+   When Var [0;32mSeverity[0m is ignored: [0;32mconfidence 0.046 -> 1.000, base 1293 -> 28049[0m, pval 0.00000, z_score -226.172, pimratioabs 21.693
+   ... varname's Severity category Fatal cannot be ignored due to either single category or the ordinal data type and not eligible (middle) category cannot be thrown out
+Colored rule is [1;33mDriver_Age_Band[0m([1;33m16 - 20[0m 21 - 25 26 - 35 [0;31m36 - 45[0m) & [0;31mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+
+LEGEND: 
+  [0;32mATTRIBUTE/VALUE IS VERY IMPORTANT FOR INTERPRETATION AND CANNOT BE IGNORED[0m
+  [1;33mATTRIBUTE/VALUE IS SIGNIFICANT FOR INTERPRETATION[0m
+  [0;31mATTRIBUTE/VALUE SHOULD NOT BE USED IN INTERPRETATION AND CAN BE IGNORED[0m
+  VALUE IS NOT ELIGIBLE FOR ASSESSING THE IMPORTANCE (E.G. A MIDDLE CATEGORY OF AN ORDINAL SEQUENCE)
+
+ RULE_ID BASE  CONF   AAD   RULE_TEXT
+       1  1293 0.046 +1.401 [1;33mDriver_Age_Band[0m([1;33m16 - 20[0m 21 - 25 26 - 35 [0;31m36 - 45[0m) & [0;31mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+       2  1207 0.046 +1.379 [1;33mDriver_Age_Band[0m([1;33m16 - 20[0m 21 - 25 26 - 35 [0;31m36 - 45[0m) & [0;31mSpeed_limit[0m([1;33m60[0m [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+       3  1124 0.045 +1.366 [0;31mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 [0;31m36 - 45[0m) & [0;31mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) => [0;32mSeverity[0m(Fatal) | 
+       4  1054 0.045 +1.359 [0;31mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 [0;31m36 - 45[0m) & [0;31mSpeed_limit[0m([1;33m60[0m [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) => [0;32mSeverity[0m(Fatal) | 
+       5  1091 0.049 +1.559 [0;31mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 [0;31m36 - 45[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+       6  1162 0.045 +1.368 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;31mSpeed_limit[0m([0;31m40[0m 50 [0;31m60[0m) & [0;32mLight[0m(6,Darkness - no lighting) => [0;32mSeverity[0m(Fatal) | 
+       7  1115 0.045 +1.352 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;31mSpeed_limit[0m([0;31m40[0m 50 [0;31m60[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mRoad_Type[0m(6,Single carriageway) => [0;32mSeverity[0m(Fatal) | 
+       8  1026 0.053 +1.752 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;31mSpeed_limit[0m([0;31m40[0m 50 [0;31m60[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+       9  1068 0.045 +1.365 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;31mSpeed_limit[0m([0;31m50[0m [0;31m60[0m) & [0;32mLight[0m(6,Darkness - no lighting) => [0;32mSeverity[0m(Fatal) | 
+      10  1024 0.045 +1.347 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;31mSpeed_limit[0m([0;31m50[0m [0;31m60[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mRoad_Type[0m(6,Single carriageway) => [0;32mSeverity[0m(Fatal) | 
+      11  1381 0.048 +1.512 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;31mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) => [0;32mSeverity[0m(Fatal) | 
+      12  1038 0.050 +1.597 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;31mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mJourney[0m(5 Other/Not known) => [0;32mSeverity[0m(Fatal) | 
+      13  1025 0.045 +1.348 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;31mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mRoad_Type[0m(6,Single carriageway) => [0;32mSeverity[0m(Fatal) | 
+      14  1204 0.056 +1.907 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;31mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      15  1291 0.048 +1.496 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;31mSpeed_limit[0m([1;33m60[0m [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) => [0;32mSeverity[0m(Fatal) | 
+      16  1119 0.055 +1.876 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;31mSpeed_limit[0m([1;33m60[0m [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      17  1526 0.045 +1.346 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;32mLight[0m(6,Darkness - no lighting) => [0;32mSeverity[0m(Fatal) | 
+      18  1160 0.047 +1.433 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mJourney[0m(5 Other/Not known) => [0;32mSeverity[0m(Fatal) | 
+      19  1008 0.054 +1.796 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mJourney[0m(5 Other/Not known) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      20  1019 0.048 +1.511 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mRoad_Type[0m(6,Single carriageway) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      21  1330 0.052 +1.697 [1;33mDriver_Age_Band[0m([0;31m21 - 25[0m 26 - 35 36 - 45 [0;31m46 - 55[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      22  1065 0.046 +1.384 [1;33mDriver_Age_Band[0m([1;33m26 - 35[0m 36 - 45 [0;31m46 - 55[0m) & [0;32mLight[0m(6,Darkness - no lighting) => [0;32mSeverity[0m(Fatal) | 
+      23  1111 0.052 +1.685 [0;32mDriver_Age_Band[0m([1;33m26 - 35[0m 36 - 45 46 - 55 [0;31m56 - 65[0m) & [0;31mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) => [0;32mSeverity[0m(Fatal) | 
+      24  1037 0.051 +1.663 [0;32mDriver_Age_Band[0m([1;33m26 - 35[0m 36 - 45 46 - 55 [0;31m56 - 65[0m) & [0;31mSpeed_limit[0m([1;33m60[0m [1;33m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) => [0;32mSeverity[0m(Fatal) | 
+      25  1222 0.048 +1.485 [1;33mDriver_Age_Band[0m([1;33m26 - 35[0m 36 - 45 46 - 55 [0;31m56 - 65[0m) & [0;32mLight[0m(6,Darkness - no lighting) => [0;32mSeverity[0m(Fatal) | 
+      26  1065 0.054 +1.803 [1;33mDriver_Age_Band[0m([1;33m26 - 35[0m 36 - 45 46 - 55 [0;31m56 - 65[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      27  1100 0.048 +1.475 [0;32mDriver_Age_Band[0m([0;31m36 - 45[0m 46 - 55 [0;31m56 - 65[0m) & [0;32mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;31mJourney[0m(5 Other/Not known) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      28  1241 0.048 +1.494 [0;32mDriver_Age_Band[0m([0;31m36 - 45[0m 46 - 55 56 - 65 [0;31m66 - 75[0m) & [0;32mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;31mJourney[0m(5 Other/Not known) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      29  1782 0.045 +1.366 [0;32mDriver_Age_Band[0m([0;31m36 - 45[0m 46 - 55 56 - 65 [0;31m66 - 75[0m) & [0;32mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      30  1111 0.047 +1.445 [0;32mDriver_Age_Band[0m([0;31m36 - 45[0m 46 - 55 56 - 65 [0;31m66 - 75[0m) & [0;32mSpeed_limit[0m([0;31m60[0m [0;31m70[0m) & [0;31mJourney[0m(5 Other/Not known) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      31  1083 0.049 +1.534 [0;32mDriver_Age_Band[0m([0;31m46 - 55[0m 56 - 65 [0;31m66 - 75[0m) & [0;32mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      32  1212 0.050 +1.593 [0;32mDriver_Age_Band[0m([0;31m46 - 55[0m 56 - 65 66 - 75 [0;31mOver 75[0m) & [0;32mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      33  1079 0.049 +1.539 [0;32mDriver_Age_Band[0m([0;31m46 - 55[0m 56 - 65 66 - 75 [0;31mOver 75[0m) & [0;32mSpeed_limit[0m([1;33m60[0m [0;31m70[0m) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      34  1201 0.049 +1.546 [0;31mSpeed_limit[0m([0;31m40[0m 50 [0;31m60[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mJourney[0m(5 Other/Not known) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      35  1420 0.047 +1.466 [0;31mSpeed_limit[0m([0;31m40[0m 50 [0;31m60[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mRoad_Type[0m(6,Single carriageway) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      36  1480 0.048 +1.490 [0;31mSpeed_limit[0m([0;31m40[0m 50 [0;31m60[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      37  1095 0.049 +1.527 [0;31mSpeed_limit[0m([0;31m50[0m [0;31m60[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mJourney[0m(5 Other/Not known) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      38  1304 0.047 +1.462 [0;31mSpeed_limit[0m([0;31m50[0m [1;33m60[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mRoad_Type[0m(6,Single carriageway) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      39  1358 0.048 +1.484 [0;31mSpeed_limit[0m([0;31m50[0m [1;33m60[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      40  1322 0.051 +1.642 [0;31mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mJourney[0m(5 Other/Not known) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      41  1307 0.047 +1.466 [0;31mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [1;33mRoad_Type[0m(6,Single carriageway) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      42  1702 0.051 +1.649 [1;33mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      43  1182 0.046 +1.378 [0;32mSpeed_limit[0m([0;31m50[0m 60 [0;31m70[0m) & [0;32mRoad_Type[0m(3,Dual carriageway) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      44  1006 0.048 +1.486 [0;31mSpeed_limit[0m(60) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mJourney[0m(5 Other/Not known) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      45  1197 0.046 +1.414 [0;31mSpeed_limit[0m(60) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mRoad_Type[0m(6,Single carriageway) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      46  1238 0.047 +1.431 [0;31mSpeed_limit[0m(60) & [0;32mLight[0m(6,Darkness - no lighting) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      47  1233 0.050 +1.613 [0;31mSpeed_limit[0m([1;33m60[0m [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;31mJourney[0m(5 Other/Not known) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      48  1200 0.046 +1.419 [0;31mSpeed_limit[0m([1;33m60[0m [0;31m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [1;33mRoad_Type[0m(6,Single carriageway) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      49  1582 0.050 +1.615 [0;31mSpeed_limit[0m([1;33m60[0m [1;33m70[0m) & [0;32mLight[0m(6,Darkness - no lighting) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      50  1033 0.045 +1.352 [0;32mSpeed_limit[0m([0;31m60[0m [0;31m70[0m) & [0;32mRoad_Type[0m(3,Dual carriageway) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      51  1222 0.045 +1.367 [0;32mLight[0m(6,Darkness - no lighting) & [0;31mJourney[0m(5 Other/Not known) & [0;31mRoad_Type[0m(6,Single carriageway) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      52  1491 0.048 +1.488 [0;32mLight[0m(6,Darkness - no lighting) & [0;31mJourney[0m(5 Other/Not known) & [1;33mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
+      53  1897 0.048 +1.482 [0;32mLight[0m(6,Darkness - no lighting) & [0;32mSex[0m(Male) => [0;32mSeverity[0m(Fatal) | 
