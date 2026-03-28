@@ -1,6 +1,8 @@
 from lib.action_literals import action_literals
 from lib.datasets import datasets
+
 from cleverminer import cleverminer
+from lib.minimal_rules import *
 
 ds = datasets()
 
@@ -35,13 +37,20 @@ clm2.print_summary()
 clm2.print_rule(53)
 
 
+ignored_rules = filter_cleverminer_rules(clm2)
 
+print(f"Ignored rules: {ignored_rules}")
 
 al = action_literals(clm2)
 rule_id=53
 clm2.print_rule(rule_id)
 al.print_rule_literal_importance(rule_id)
-al.print_rulelist()
+al.print_rulelist(print_stats=True)
+
+
+print(f"AND NOW, with excluded rules : {ignored_rules}")
+
+al.print_rulelist(ignored_rules,print_stats=True)
 
 
 

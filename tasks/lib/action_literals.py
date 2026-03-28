@@ -148,7 +148,7 @@ class action_literals:
             pimratioabs=p2/p1
         return z ,p_val, pimratioabs
 
-    def _get_literal_importance(self,rule_id=None,print_rule=True,print_details=True):
+    def _get_literal_importance(self,rule_id=None,print_rule=True,print_details=True,get_stats=False):
         if rule_id is None:
             print("ERROR:Rule id is not specified")
             return None
@@ -158,6 +158,9 @@ class action_literals:
         ff_full = ff=self._get_rule_ff(rule_id=rule_id)
 
         ff_texts={}
+        stats = {}
+        stats['has_ignorable_literal'] = False
+        stats['has_ignorable_category'] = False
 
         actrule = self.clm2.result['rules'][rule_id-1]
         datalabels = self.clm2.result['datalabels']
@@ -193,6 +196,7 @@ class action_literals:
                     if print_details:
                         print(f"   When Var {self.canbeignored}{vn}{self.bcolors.ENDC} is ignored: confidence {self.canbeignored}{conf_full:.3f} -> {conf:.3f}, base {base_full} -> {base}{self.bcolors.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
                     ff_text= ff_text+self.canbeignored+ vn+self.bcolors.ENDC
+                    stats['has_ignorable_literal'] = True
                 ff_text=ff_text +'('
 
 
@@ -248,6 +252,7 @@ class action_literals:
                         if print_details:
                             print(f"   ... when varname's {self.canbeignored}{vn}{self.bcolors.ENDC} category {self.canbeignored}{cn}{self.bcolors.ENDC} ignored : confidence {self.canbeignored}{conf_full:.3f} -> {conf2:.3f}, base {base_full} -> {base2}{self.bcolors.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
                         ff_text = ff_text +self.canbeignored + cn + self.bcolors.ENDC
+                        stats['has_ignorable_category'] = True
 
 
                     order2+=1
@@ -259,29 +264,52 @@ class action_literals:
         final_text = ff_texts['ante'] + ' => ' + ff_texts['succ']+' | '+ff_texts['cond']
         if print_rule:
             print(f'Colored rule is {final_text}')
-        return final_text
+        if get_stats:
+            return final_text,stats
+        else:
+            return final_text
 
     def print_rule_literal_importance(self,rule_id=None):
         self._get_literal_importance(rule_id=rule_id,print_rule=True,print_details=True)
 
 
-    def print_rulelist(self):
+    def print_rulelist(self,ignore_rules=set(),print_stats=False):
         print(
             f"\nLEGEND: \n  {self.cannotbeignored}ATTRIBUTE/VALUE IS VERY IMPORTANT FOR INTERPRETATION AND CANNOT BE IGNORED{self.bcolors.ENDC}\n  {self.mightbeignored}ATTRIBUTE/VALUE IS SIGNIFICANT FOR INTERPRETATION{self.bcolors.ENDC}\n  {self.canbeignored}ATTRIBUTE/VALUE SHOULD NOT BE USED IN INTERPRETATION AND CAN BE IGNORED{self.bcolors.ENDC}\n  VALUE IS NOT ELIGIBLE FOR ASSESSING THE IMPORTANCE (E.G. A MIDDLE CATEGORY OF AN ORDINAL SEQUENCE)")
 
         print("\n RULE_ID BASE  CONF   AAD   RULE_TEXT")
+        rules_with_ignorable_literal = 0
+        rules_with_ignorable_category = 0
+        rules_with_ignorable_item = 0
+        rules_total = 0
         for iii in range(self.clm2.get_rulecount()):
             ruleid = iii + 1
+            if not (ruleid in ignore_rules):
+                rules_total = rules_total + 1
 
-            ff = self.clm2.get_fourfold(ruleid)
-            rule_text = self._get_literal_importance(ruleid,False,False)
-            base = ff[0]
-            conf = 0
-            if ff[0] + ff[1] > 0:
-                conf = base / (ff[0] + ff[1])
-                aad = 0
-                if ff[0] > 0:
-                    aad = conf / ( (ff[0] + ff[2]) / sum(ff)) -1
-            print(f'{ruleid:>8} {base:>5} {conf:.3f} {aad:+.3f} {rule_text}')
+                ff = self.clm2.get_fourfold(ruleid)
+                rule_text, stats = self._get_literal_importance(ruleid,False,False,get_stats=True)
+                if stats['has_ignorable_category']:
+                    rules_with_ignorable_category = rules_with_ignorable_category + 1
+                if stats['has_ignorable_literal']:
+                    rules_with_ignorable_literal = rules_with_ignorable_literal + 1
+                if stats['has_ignorable_category'] or stats['has_ignorable_literal']:
+                    rules_with_ignorable_item = rules_with_ignorable_item + 1
+                base = ff[0]
+                conf = 0
+                if ff[0] + ff[1] > 0:
+                    conf = base / (ff[0] + ff[1])
+                    aad = 0
+                    if ff[0] > 0:
+                        aad = conf / ( (ff[0] + ff[2]) / sum(ff)) -1
+                print(f'{ruleid:>8} {base:>5} {conf:.3f} {aad:+.3f} {rule_text}')
+
+        if print_stats:
+            print(f"\nStatistics:")
+            print(f"    Rules total                   : {rules_total:6}")
+            print(f"    Rules with ignorable item     : {rules_with_ignorable_item:6}")
+            print(f"    Rules with ignorable literal  : {rules_with_ignorable_literal:6}")
+            print(f"    Rules with ignorable category : {rules_with_ignorable_category:6}")
+
 
 
