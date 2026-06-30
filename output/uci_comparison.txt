@@ -1,0 +1,619 @@
+Cleverminer version  1.2.6
+
+Table 4: Rule counts on UCI ML datasets
+
+Dataset            input  CLM Ph1 redCLM Ph1 r+yCLM Ph2 redCLM Ph2 r+y     QCBA      PEP   RIPPERdelta-TAR 0delta-TAR .05delta-TAR .10  Ham .05  Ham .01 chi2 .05 chi2 .01
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+ 34%|#################                                   |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 2067, rules 392, times: prep 0.04sec, processing 0.40sec
+uci_anneal           392         30       21       22       14       97       97       97      382      382      382      189      117      293      273
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  9%|####                                                |Elapsed Time: 0:00:00
+ 22%|###########                                         |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 4371, rules 289, times: prep 0.02sec, processing 0.16sec
+uci_australian       289        154      148       74       21      228      225      228      286      286      286      289      289      289      289
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  5%|##                                                  |Elapsed Time: 0:00:00
+  6%|###                                                 |Elapsed Time: 0:00:00
+  8%|####                                                |Elapsed Time: 0:00:00
+ 11%|#####                                               |Elapsed Time: 0:00:00
+ 13%|#######                                             |Elapsed Time: 0:00:00
+ 17%|#########                                           |Elapsed Time: 0:00:00
+ 18%|#########                                           |Elapsed Time: 0:00:00
+ 21%|###########                                         |Elapsed Time: 0:00:00
+ 24%|############                                        |Elapsed Time: 0:00:00
+ 26%|#############                                       |Elapsed Time: 0:00:00
+ 30%|###############                                     |Elapsed Time: 0:00:00
+ 34%|#################                                   |Elapsed Time: 0:00:01
+ 38%|###################                                 |Elapsed Time: 0:00:01
+ 41%|#####################                               |Elapsed Time: 0:00:01
+ 46%|########################                            |Elapsed Time: 0:00:01
+ 53%|###########################                         |Elapsed Time: 0:00:01
+100%|####################################################|Elapsed Time: 0:00:01
+Done. Total verifications : 18300, rules 19, times: prep 0.02sec, processing 1.33sec
+uci_autos             19         19       19        8        6       19       19       19       19       19       19       19       19       19       19
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 107, rules 93, times: prep 0.01sec, processing 0.02sec
+uci_breast_w          93         27       16       27       16       77       77       77       83       81       81       93       92       93       93
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  3%|##                                                  |Elapsed Time: 0:00:00
+  7%|####                                                |Elapsed Time: 0:00:00
+ 14%|#######                                             |Elapsed Time: 0:00:00
+ 20%|##########                                          |Elapsed Time: 0:00:00
+ 51%|###########################                         |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 5643, rules 650, times: prep 0.02sec, processing 0.31sec
+uci_colic            650         93       92       34       47      363      345      363      632      632      632      572      312      650      638
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+ 10%|#####                                               |Elapsed Time: 0:00:00
+ 30%|###############                                     |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 2984, rules 210, times: prep 0.02sec, processing 0.13sec
+uci_credit_a         210        119      117       49       18      167      167      167      208      208      208      210      210      210      210
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  8%|####                                                |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 2041, rules 177, times: prep 0.02sec, processing 0.11sec
+uci_credit_g         177         78       75       22       25      131      131      131      174      174      174      161       91      177      177
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+ 15%|########                                            |Elapsed Time: 0:00:00
+ 40%|#####################                               |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 4061, rules 377, times: prep 0.02sec, processing 0.16sec
+uci_diabetes         377         88       63       65       26      247      247      247      368      368      368      377      331      377      377
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  7%|###                                                 |Elapsed Time: 0:00:00
+ 17%|#########                                           |Elapsed Time: 0:00:00
+ 33%|#################                                   |Elapsed Time: 0:00:00
+ 50%|##########################                          |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 4103, rules 38, times: prep 0.01sec, processing 0.25sec
+uci_glass             38         38       38       20        7       38       38       38       38       38       38       38       38       38       38
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+ 12%|######                                              |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 2771, rules 244, times: prep 0.01sec, processing 0.11sec
+uci_heart_statlog    244        179      179       37       27      222      221      222      241      241      241      244      197      244      244
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  6%|###                                                 |Elapsed Time: 0:00:00
+ 17%|#########                                           |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 4427, rules 2126, times: prep 0.02sec, processing 0.17sec
+uci_hepatitis       2126         61       60       56       55      902      815      902     2076     2076     2076      124        1     1104      689
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  5%|##                                                  |Elapsed Time: 0:00:00
+  8%|####                                                |Elapsed Time: 0:00:00
+ 13%|#######                                             |Elapsed Time: 0:00:00
+ 14%|#######                                             |Elapsed Time: 0:00:00
+ 21%|###########                                         |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 4852, rules 4750, times: prep 0.17sec, processing 0.46sec
+uci_hypothyroid     4750        251      133      251      131     1162     1073     1162     4637     4637     4637     1309      726     3526     3189
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+  4%|##                                                  |Elapsed Time: 0:00:00
+  7%|###                                                 |Elapsed Time: 0:00:00
+  8%|####                                                |Elapsed Time: 0:00:00
+  9%|####                                                |Elapsed Time: 0:00:00
+  9%|#####                                               |Elapsed Time: 0:00:00
+ 11%|#####                                               |Elapsed Time: 0:00:00
+ 12%|######                                              |Elapsed Time: 0:00:00
+ 13%|#######                                             |Elapsed Time: 0:00:00
+ 15%|########                                            |Elapsed Time: 0:00:01
+ 16%|########                                            |Elapsed Time: 0:00:01
+ 18%|#########                                           |Elapsed Time: 0:00:01
+ 20%|##########                                          |Elapsed Time: 0:00:01
+ 21%|###########                                         |Elapsed Time: 0:00:01
+ 22%|###########                                         |Elapsed Time: 0:00:01
+ 24%|############                                        |Elapsed Time: 0:00:01
+ 25%|#############                                       |Elapsed Time: 0:00:01
+ 27%|##############                                      |Elapsed Time: 0:00:01
+ 29%|###############                                     |Elapsed Time: 0:00:01
+ 30%|###############                                     |Elapsed Time: 0:00:02
+ 31%|################                                    |Elapsed Time: 0:00:02
+ 33%|#################                                   |Elapsed Time: 0:00:02
+ 35%|##################                                  |Elapsed Time: 0:00:02
+ 36%|###################                                 |Elapsed Time: 0:00:02
+ 39%|####################                                |Elapsed Time: 0:00:02
+ 40%|#####################                               |Elapsed Time: 0:00:02
+ 42%|######################                              |Elapsed Time: 0:00:02
+ 45%|#######################                             |Elapsed Time: 0:00:02
+ 48%|#########################                           |Elapsed Time: 0:00:02
+ 49%|#########################                           |Elapsed Time: 0:00:02
+ 51%|##########################                          |Elapsed Time: 0:00:03
+ 54%|############################                        |Elapsed Time: 0:00:03
+ 56%|#############################                       |Elapsed Time: 0:00:03
+ 59%|##############################                      |Elapsed Time: 0:00:03
+ 63%|################################                    |Elapsed Time: 0:00:03
+ 65%|##################################                  |Elapsed Time: 0:00:03
+ 68%|###################################                 |Elapsed Time: 0:00:03
+ 72%|#####################################               |Elapsed Time: 0:00:03
+ 75%|#######################################             |Elapsed Time: 0:00:03
+ 81%|##########################################          |Elapsed Time: 0:00:03
+ 89%|##############################################      |Elapsed Time: 0:00:03
+100%|####################################################|Elapsed Time: 0:00:03
+Done. Total verifications : 86091, rules 22849, times: prep 0.04sec, processing 3.88sec
+uci_ionosphere     22849       5870     5699     2054      496    15344    14965    15344    22762    22762    22762    21450    13790    22849    22640
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 1255, rules 303, times: prep 0.02sec, processing 0.06sec
+uci_iris             303         90       81       73       31      152      148      152      291      291      291      303      303      303      303
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+ 21%|###########                                         |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 1842, rules 606, times: prep 0.01sec, processing 0.09sec
+uci_labor            606        112      112       45       42      267      262      267      585      585      585      166       71      558      348
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+  5%|##                                                  |Elapsed Time: 0:00:00
+  7%|###                                                 |Elapsed Time: 0:00:00
+  7%|###                                                 |Elapsed Time: 0:00:00
+  8%|####                                                |Elapsed Time: 0:00:00
+  9%|#####                                               |Elapsed Time: 0:00:00
+ 11%|#####                                               |Elapsed Time: 0:00:00
+ 13%|#######                                             |Elapsed Time: 0:00:01
+ 13%|#######                                             |Elapsed Time: 0:00:01
+ 14%|#######                                             |Elapsed Time: 0:00:01
+ 17%|########                                            |Elapsed Time: 0:00:01
+ 19%|##########                                          |Elapsed Time: 0:00:01
+ 20%|##########                                          |Elapsed Time: 0:00:01
+ 21%|###########                                         |Elapsed Time: 0:00:01
+ 22%|###########                                         |Elapsed Time: 0:00:01
+ 26%|#############                                       |Elapsed Time: 0:00:01
+ 26%|#############                                       |Elapsed Time: 0:00:01
+ 27%|##############                                      |Elapsed Time: 0:00:01
+ 29%|###############                                     |Elapsed Time: 0:00:01
+ 32%|#################                                   |Elapsed Time: 0:00:02
+ 34%|#################                                   |Elapsed Time: 0:00:02
+ 36%|###################                                 |Elapsed Time: 0:00:02
+ 38%|####################                                |Elapsed Time: 0:00:02
+ 39%|####################                                |Elapsed Time: 0:00:02
+ 42%|#####################                               |Elapsed Time: 0:00:02
+ 44%|#######################                             |Elapsed Time: 0:00:02
+ 46%|########################                            |Elapsed Time: 0:00:02
+ 49%|#########################                           |Elapsed Time: 0:00:02
+ 51%|##########################                          |Elapsed Time: 0:00:02
+ 53%|###########################                         |Elapsed Time: 0:00:02
+ 55%|############################                        |Elapsed Time: 0:00:02
+ 58%|##############################                      |Elapsed Time: 0:00:03
+ 59%|##############################                      |Elapsed Time: 0:00:03
+ 63%|################################                    |Elapsed Time: 0:00:03
+ 64%|#################################                   |Elapsed Time: 0:00:03
+ 67%|##################################                  |Elapsed Time: 0:00:03
+ 72%|#####################################               |Elapsed Time: 0:00:03
+ 77%|########################################            |Elapsed Time: 0:00:03
+ 82%|##########################################          |Elapsed Time: 0:00:03
+ 89%|##############################################      |Elapsed Time: 0:00:03
+100%|####################################################|Elapsed Time: 0:00:03
+Done. Total verifications : 0, rules 0, times: prep 0.62sec, processing 3.51sec
+uci_letter             0          0        0        0        0        0        0        0        0        0        0        0        0        0        0
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 617, rules 109, times: prep 0.01sec, processing 0.04sec
+uci_lymph            109         42       40       21       20       84       80       84      104      104      104       95       57      109      107
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+  6%|###                                                 |Elapsed Time: 0:00:00
+  8%|####                                                |Elapsed Time: 0:00:00
+ 18%|#########                                           |Elapsed Time: 0:00:00
+ 22%|###########                                         |Elapsed Time: 0:00:00
+ 25%|#############                                       |Elapsed Time: 0:00:00
+ 27%|##############                                      |Elapsed Time: 0:00:00
+ 30%|###############                                     |Elapsed Time: 0:00:00
+ 32%|#################                                   |Elapsed Time: 0:00:00
+ 35%|##################                                  |Elapsed Time: 0:00:00
+ 37%|###################                                 |Elapsed Time: 0:00:00
+ 40%|#####################                               |Elapsed Time: 0:00:00
+ 44%|#######################                             |Elapsed Time: 0:00:00
+ 49%|#########################                           |Elapsed Time: 0:00:01
+ 54%|############################                        |Elapsed Time: 0:00:01
+ 59%|##############################                      |Elapsed Time: 0:00:01
+ 64%|#################################                   |Elapsed Time: 0:00:01
+ 69%|####################################                |Elapsed Time: 0:00:01
+ 75%|#######################################             |Elapsed Time: 0:00:01
+ 88%|##############################################      |Elapsed Time: 0:00:01
+100%|####################################################|Elapsed Time: 0:00:01
+Done. Total verifications : 20479, rules 268, times: prep 0.06sec, processing 1.48sec
+uci_segment          268        268      268      268      254      268      268      268      268      268      268      268      268      268      268
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  0%|                                                    |Elapsed Time: 0:00:00
+  0%|                                                    |Elapsed Time: 0:00:00
+  0%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  1%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+  3%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  5%|##                                                  |Elapsed Time: 0:00:01
+  5%|##                                                  |Elapsed Time: 0:00:01
+  5%|##                                                  |Elapsed Time: 0:00:01
+  5%|###                                                 |Elapsed Time: 0:00:01
+  6%|###                                                 |Elapsed Time: 0:00:01
+  6%|###                                                 |Elapsed Time: 0:00:01
+  7%|###                                                 |Elapsed Time: 0:00:01
+  7%|###                                                 |Elapsed Time: 0:00:01
+  7%|####                                                |Elapsed Time: 0:00:01
+  8%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:02
+  9%|####                                                |Elapsed Time: 0:00:02
+  9%|####                                                |Elapsed Time: 0:00:02
+ 10%|#####                                               |Elapsed Time: 0:00:02
+ 10%|#####                                               |Elapsed Time: 0:00:02
+ 10%|#####                                               |Elapsed Time: 0:00:02
+ 11%|#####                                               |Elapsed Time: 0:00:02
+ 11%|######                                              |Elapsed Time: 0:00:02
+ 12%|######                                              |Elapsed Time: 0:00:02
+ 12%|######                                              |Elapsed Time: 0:00:03
+ 13%|######                                              |Elapsed Time: 0:00:03
+ 13%|#######                                             |Elapsed Time: 0:00:03
+ 13%|#######                                             |Elapsed Time: 0:00:03
+ 14%|#######                                             |Elapsed Time: 0:00:03
+ 14%|#######                                             |Elapsed Time: 0:00:03
+ 15%|#######                                             |Elapsed Time: 0:00:03
+ 15%|########                                            |Elapsed Time: 0:00:03
+ 15%|########                                            |Elapsed Time: 0:00:03
+ 16%|########                                            |Elapsed Time: 0:00:03
+ 16%|########                                            |Elapsed Time: 0:00:04
+ 17%|#########                                           |Elapsed Time: 0:00:04
+ 17%|#########                                           |Elapsed Time: 0:00:04
+ 18%|#########                                           |Elapsed Time: 0:00:04
+ 18%|#########                                           |Elapsed Time: 0:00:04
+ 18%|#########                                           |Elapsed Time: 0:00:04
+ 19%|##########                                          |Elapsed Time: 0:00:04
+ 20%|##########                                          |Elapsed Time: 0:00:04
+ 20%|##########                                          |Elapsed Time: 0:00:04
+ 20%|##########                                          |Elapsed Time: 0:00:04
+ 21%|###########                                         |Elapsed Time: 0:00:05
+ 21%|###########                                         |Elapsed Time: 0:00:05
+ 22%|###########                                         |Elapsed Time: 0:00:05
+ 22%|###########                                         |Elapsed Time: 0:00:05
+ 23%|############                                        |Elapsed Time: 0:00:05
+ 23%|############                                        |Elapsed Time: 0:00:05
+ 24%|############                                        |Elapsed Time: 0:00:05
+ 24%|############                                        |Elapsed Time: 0:00:05
+ 25%|#############                                       |Elapsed Time: 0:00:05
+ 25%|#############                                       |Elapsed Time: 0:00:05
+ 25%|#############                                       |Elapsed Time: 0:00:05
+ 26%|#############                                       |Elapsed Time: 0:00:05
+ 26%|##############                                      |Elapsed Time: 0:00:06
+ 27%|##############                                      |Elapsed Time: 0:00:06
+ 27%|##############                                      |Elapsed Time: 0:00:06
+ 28%|##############                                      |Elapsed Time: 0:00:06
+ 28%|###############                                     |Elapsed Time: 0:00:06
+ 29%|###############                                     |Elapsed Time: 0:00:06
+ 30%|###############                                     |Elapsed Time: 0:00:06
+ 30%|###############                                     |Elapsed Time: 0:00:06
+ 31%|################                                    |Elapsed Time: 0:00:06
+ 31%|################                                    |Elapsed Time: 0:00:06
+ 32%|################                                    |Elapsed Time: 0:00:07
+ 32%|#################                                   |Elapsed Time: 0:00:07
+ 33%|#################                                   |Elapsed Time: 0:00:07
+ 33%|#################                                   |Elapsed Time: 0:00:07
+ 34%|##################                                  |Elapsed Time: 0:00:07
+ 35%|##################                                  |Elapsed Time: 0:00:07
+ 35%|##################                                  |Elapsed Time: 0:00:07
+ 36%|###################                                 |Elapsed Time: 0:00:07
+ 37%|###################                                 |Elapsed Time: 0:00:07
+ 37%|###################                                 |Elapsed Time: 0:00:07
+ 38%|####################                                |Elapsed Time: 0:00:07
+ 38%|####################                                |Elapsed Time: 0:00:08
+ 39%|####################                                |Elapsed Time: 0:00:08
+ 40%|#####################                               |Elapsed Time: 0:00:08
+ 40%|#####################                               |Elapsed Time: 0:00:08
+ 41%|#####################                               |Elapsed Time: 0:00:08
+ 42%|#####################                               |Elapsed Time: 0:00:08
+ 42%|######################                              |Elapsed Time: 0:00:08
+ 43%|######################                              |Elapsed Time: 0:00:08
+ 44%|#######################                             |Elapsed Time: 0:00:08
+ 45%|#######################                             |Elapsed Time: 0:00:08
+ 45%|#######################                             |Elapsed Time: 0:00:08
+ 46%|########################                            |Elapsed Time: 0:00:09
+ 46%|########################                            |Elapsed Time: 0:00:09
+ 47%|########################                            |Elapsed Time: 0:00:09
+ 48%|#########################                           |Elapsed Time: 0:00:09
+ 49%|#########################                           |Elapsed Time: 0:00:09
+ 50%|##########################                          |Elapsed Time: 0:00:09
+ 50%|##########################                          |Elapsed Time: 0:00:09
+ 51%|##########################                          |Elapsed Time: 0:00:09
+ 52%|###########################                         |Elapsed Time: 0:00:09
+ 53%|###########################                         |Elapsed Time: 0:00:09
+ 53%|############################                        |Elapsed Time: 0:00:10
+ 54%|############################                        |Elapsed Time: 0:00:10
+ 55%|############################                        |Elapsed Time: 0:00:10
+ 56%|#############################                       |Elapsed Time: 0:00:10
+ 57%|#############################                       |Elapsed Time: 0:00:10
+ 58%|##############################                      |Elapsed Time: 0:00:10
+ 58%|##############################                      |Elapsed Time: 0:00:10
+ 60%|###############################                     |Elapsed Time: 0:00:10
+ 60%|###############################                     |Elapsed Time: 0:00:10
+ 61%|################################                    |Elapsed Time: 0:00:10
+ 62%|################################                    |Elapsed Time: 0:00:10
+ 64%|#################################                   |Elapsed Time: 0:00:11
+ 65%|#################################                   |Elapsed Time: 0:00:11
+ 66%|##################################                  |Elapsed Time: 0:00:11
+ 67%|###################################                 |Elapsed Time: 0:00:11
+ 68%|###################################                 |Elapsed Time: 0:00:11
+ 70%|####################################                |Elapsed Time: 0:00:11
+ 71%|#####################################               |Elapsed Time: 0:00:11
+ 73%|######################################              |Elapsed Time: 0:00:11
+ 74%|######################################              |Elapsed Time: 0:00:11
+ 75%|#######################################             |Elapsed Time: 0:00:11
+ 77%|########################################            |Elapsed Time: 0:00:11
+ 78%|########################################            |Elapsed Time: 0:00:12
+ 79%|#########################################           |Elapsed Time: 0:00:12
+ 81%|##########################################          |Elapsed Time: 0:00:12
+ 83%|###########################################         |Elapsed Time: 0:00:12
+ 84%|############################################        |Elapsed Time: 0:00:12
+ 87%|#############################################       |Elapsed Time: 0:00:12
+ 89%|##############################################      |Elapsed Time: 0:00:12
+ 92%|################################################    |Elapsed Time: 0:00:12
+ 97%|##################################################  |Elapsed Time: 0:00:12
+100%|####################################################|Elapsed Time: 0:00:12
+Done. Total verifications : 342948, rules 6750, times: prep 0.07sec, processing 12.58sec
+uci_sonar           6750       4911     4897      772      319     5933     5887     5933     6743     6743     6743     6750     3928     6750     6750
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  5%|##                                                  |Elapsed Time: 0:00:00
+ 14%|#######                                             |Elapsed Time: 0:00:00
+ 21%|###########                                         |Elapsed Time: 0:00:00
+ 31%|################                                    |Elapsed Time: 0:00:00
+ 36%|###################                                 |Elapsed Time: 0:00:00
+ 58%|##############################                      |Elapsed Time: 0:00:00
+ 82%|##########################################          |Elapsed Time: 0:00:00
+ 96%|##################################################  |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 14791, rules 1378, times: prep 0.28sec, processing 0.46sec
+uci_spambase        1378        344      250      333      205      506      505      506     1364     1364     1364     1378     1378     1378     1378
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+  7%|###                                                 |Elapsed Time: 0:00:00
+ 10%|#####                                               |Elapsed Time: 0:00:00
+ 13%|#######                                             |Elapsed Time: 0:00:00
+ 17%|#########                                           |Elapsed Time: 0:00:00
+ 19%|#########                                           |Elapsed Time: 0:00:00
+ 24%|############                                        |Elapsed Time: 0:00:00
+ 26%|#############                                       |Elapsed Time: 0:00:00
+ 30%|###############                                     |Elapsed Time: 0:00:00
+ 35%|##################                                  |Elapsed Time: 0:00:00
+ 40%|#####################                               |Elapsed Time: 0:00:00
+ 45%|#######################                             |Elapsed Time: 0:00:00
+ 51%|##########################                          |Elapsed Time: 0:00:00
+ 57%|#############################                       |Elapsed Time: 0:00:01
+ 63%|################################                    |Elapsed Time: 0:00:01
+ 70%|####################################                |Elapsed Time: 0:00:01
+ 81%|##########################################          |Elapsed Time: 0:00:01
+100%|####################################################|Elapsed Time: 0:00:01
+Done. Total verifications : 25486, rules 28, times: prep 0.13sec, processing 1.24sec
+uci_vehicle           28         28       28       28       28       28       28       28       28       28       28       28       28       28       28
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  5%|##                                                  |Elapsed Time: 0:00:00
+ 10%|#####                                               |Elapsed Time: 0:00:00
+ 13%|#######                                             |Elapsed Time: 0:00:00
+ 19%|#########                                           |Elapsed Time: 0:00:00
+ 25%|#############                                       |Elapsed Time: 0:00:00
+ 29%|###############                                     |Elapsed Time: 0:00:00
+ 34%|#################                                   |Elapsed Time: 0:00:00
+ 41%|#####################                               |Elapsed Time: 0:00:00
+ 49%|#########################                           |Elapsed Time: 0:00:00
+ 60%|###############################                     |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 0, rules 0, times: prep 0.03sec, processing 0.69sec
+uci_vowel              0          0        0        0        0        0        0        0        0        0        0        0        0        0        0
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
