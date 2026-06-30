@@ -1,7 +1,5 @@
-pandas==3.0.1
-progressbar2==4.5.0
-scikit-learn==1.8.0
-matplotlib==3.10.8
-seaborn==0.13.2
-cleverminer==1.2.5
-
+cleverminer>=1.2.6
+numpy>=1.26.4
+pandas>=3.0.1
+scipy>=1.15.3
+scikit-learn>=1.8.0

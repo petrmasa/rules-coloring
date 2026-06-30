@@ -1,0 +1,157 @@
+Cleverminer version  1.2.6
+Python 3.12.3 | Linux 6.8.0-124-generic
+Integer loop benchmark: 66 Mops/s
+
+Table 5: Pruning re-evaluation speed
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  0%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  1%|#                                                   |Elapsed Time: 0:00:00
+  1%|#                                                   |Elapsed Time: 0:00:00
+  1%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  5%|##                                                  |Elapsed Time: 0:00:01
+  5%|##                                                  |Elapsed Time: 0:00:01
+  5%|###                                                 |Elapsed Time: 0:00:01
+  5%|###                                                 |Elapsed Time: 0:00:01
+  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:02
+  7%|###                                                 |Elapsed Time: 0:00:02
+  7%|###                                                 |Elapsed Time: 0:00:02
+  7%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:03
+  8%|####                                                |Elapsed Time: 0:00:03
+  9%|####                                                |Elapsed Time: 0:00:03
+  9%|#####                                               |Elapsed Time: 0:00:03
+ 10%|#####                                               |Elapsed Time: 0:00:03
+ 10%|#####                                               |Elapsed Time: 0:00:03
+ 10%|#####                                               |Elapsed Time: 0:00:03
+ 10%|#####                                               |Elapsed Time: 0:00:03
+ 11%|#####                                               |Elapsed Time: 0:00:03
+ 11%|#####                                               |Elapsed Time: 0:00:03
+ 12%|######                                              |Elapsed Time: 0:00:04
+ 12%|######                                              |Elapsed Time: 0:00:04
+ 14%|#######                                             |Elapsed Time: 0:00:04
+ 15%|#######                                             |Elapsed Time: 0:00:04
+ 20%|##########                                          |Elapsed Time: 0:00:04
+ 22%|###########                                         |Elapsed Time: 0:00:04
+ 24%|############                                        |Elapsed Time: 0:00:04
+ 28%|##############                                      |Elapsed Time: 0:00:04
+ 29%|###############                                     |Elapsed Time: 0:00:04
+ 33%|#################                                   |Elapsed Time: 0:00:04
+100%|####################################################|Elapsed Time: 0:00:04
+Done. Total verifications : 1906, rules 53, times: prep 1.21sec, processing 5.07sec
+
+  Accidents  (rows=538,989  rules=53)
+    per-call cost:          2380 µs
+    Phase 1:   186 ff calls (3.5/rule)    460.2 ms     115 rules/s      404 re-evals/s
+    Phase 2:   230 ff calls (11.0/entering rule)    553.4 ms  derived=7
+    Total:     416 ff calls   1013.6 ms      52 rules/s  ×2.2× vs P1 alone
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+WARNING: attribute PassengerId has more than 100 values, will be ignored.
+ If you haven't set maximum number of categories and you really need more categories and you know what you are doing, please use max_categories option to increase allowed number of categories.
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  7%|###                                                 |Elapsed Time: 0:00:00
+ 12%|######                                              |Elapsed Time: 0:00:00
+ 18%|#########                                           |Elapsed Time: 0:00:00
+ 20%|##########                                          |Elapsed Time: 0:00:00
+ 25%|#############                                       |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 2071, rules 207, times: prep 0.01sec, processing 0.39sec
+
+  Titanic  (rows=889  rules=207)
+    per-call cost:             5 µs
+    Phase 1:   549 ff calls (2.7/rule)     58.6 ms   3,532 rules/s    9,368 re-evals/s
+    Phase 2:   152 ff calls (7.6/entering rule)      4.7 ms  derived=3
+    Total:     701 ff calls     63.3 ms   3,269 rules/s  ×1.1× vs P1 alone
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+ 20%|##########                                          |Elapsed Time: 0:00:00
+ 24%|############                                        |Elapsed Time: 0:00:00
+ 26%|#############                                       |Elapsed Time: 0:00:00
+ 30%|###############                                     |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 63, rules 63, times: prep 0.02sec, processing 0.27sec
+
+  Diabetes  (rows=768  rules=63)
+    per-call cost:             7 µs
+    Phase 1:   143 ff calls (2.3/rule)      6.0 ms  10,463 rules/s   23,750 re-evals/s
+    Phase 2:     0 ff calls (0.0/entering rule)      0.0 ms  derived=0
+    Total:     143 ff calls      6.0 ms  10,426 rules/s  ×1.0× vs P1 alone
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+WARNING: attribute loan_id has more than 100 values, will be ignored.
+ If you haven't set maximum number of categories and you really need more categories and you know what you are doing, please use max_categories option to increase allowed number of categories.
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+  5%|##                                                  |Elapsed Time: 0:00:00
+  8%|####                                                |Elapsed Time: 0:00:00
+ 11%|#####                                               |Elapsed Time: 0:00:00
+ 14%|#######                                             |Elapsed Time: 0:00:00
+ 19%|##########                                          |Elapsed Time: 0:00:00
+ 21%|##########                                          |Elapsed Time: 0:00:00
+ 23%|############                                        |Elapsed Time: 0:00:00
+ 26%|#############                                       |Elapsed Time: 0:00:00
+ 31%|################                                    |Elapsed Time: 0:00:00
+ 47%|########################                            |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 11392, rules 55, times: prep 0.05sec, processing 0.89sec
+
+  Loans  (rows=4,269  rules=55)
+    per-call cost:            15 µs
+    Phase 1:   209 ff calls (3.8/rule)     15.0 ms   3,665 rules/s   13,927 re-evals/s
+    Phase 2:   240 ff calls (8.9/entering rule)     13.0 ms  derived=25
+    Total:     449 ff calls     28.0 ms   1,964 rules/s  ×1.9× vs P1 alone
+
+
+--- stderr ---
+/home/petemm/clm_coloring/repo/lib/datasets.py:68: DtypeWarning: Columns (0: Casualties, 1: District2+) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(fname, encoding='cp1250', sep='\t')

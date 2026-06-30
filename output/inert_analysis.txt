@@ -1,0 +1,676 @@
+Cleverminer version  1.2.6
+Processing accidents...
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  0%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  1%|#                                                   |Elapsed Time: 0:00:00
+  1%|#                                                   |Elapsed Time: 0:00:00
+  1%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  5%|##                                                  |Elapsed Time: 0:00:01
+  5%|###                                                 |Elapsed Time: 0:00:01
+  5%|###                                                 |Elapsed Time: 0:00:01
+  6%|###                                                 |Elapsed Time: 0:00:01
+  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:02
+  7%|###                                                 |Elapsed Time: 0:00:02
+  7%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:02
+  9%|####                                                |Elapsed Time: 0:00:03
+  9%|####                                                |Elapsed Time: 0:00:03
+ 10%|#####                                               |Elapsed Time: 0:00:03
+ 10%|#####                                               |Elapsed Time: 0:00:03
+ 10%|#####                                               |Elapsed Time: 0:00:03
+ 10%|#####                                               |Elapsed Time: 0:00:03
+ 11%|#####                                               |Elapsed Time: 0:00:03
+ 11%|#####                                               |Elapsed Time: 0:00:03
+ 12%|######                                              |Elapsed Time: 0:00:03
+ 12%|######                                              |Elapsed Time: 0:00:03
+ 14%|#######                                             |Elapsed Time: 0:00:03
+ 15%|#######                                             |Elapsed Time: 0:00:04
+ 20%|##########                                          |Elapsed Time: 0:00:04
+ 22%|###########                                         |Elapsed Time: 0:00:04
+ 24%|############                                        |Elapsed Time: 0:00:04
+ 25%|#############                                       |Elapsed Time: 0:00:04
+ 28%|##############                                      |Elapsed Time: 0:00:04
+ 29%|###############                                     |Elapsed Time: 0:00:04
+ 33%|#################                                   |Elapsed Time: 0:00:04
+100%|####################################################|Elapsed Time: 0:00:04
+Done. Total verifications : 1906, rules 53, times: prep 1.21sec, processing 4.81sec
+SUCCESS: rule 1 can be thrown out due to 42
+SUCCESS: rule 1 can be thrown out due to 53
+SUCCESS: rule 2 can be thrown out due to 1
+SUCCESS: rule 2 can be thrown out due to 42
+SUCCESS: rule 2 can be thrown out due to 49
+SUCCESS: rule 2 can be thrown out due to 53
+SUCCESS: rule 3 can be thrown out due to 11
+SUCCESS: rule 4 can be thrown out due to 3
+SUCCESS: rule 4 can be thrown out due to 11
+SUCCESS: rule 4 can be thrown out due to 15
+SUCCESS: rule 5 can be thrown out due to 21
+SUCCESS: rule 7 can be thrown out due to 6
+SUCCESS: rule 9 can be thrown out due to 6
+SUCCESS: rule 9 can be thrown out due to 11
+SUCCESS: rule 10 can be thrown out due to 6
+SUCCESS: rule 10 can be thrown out due to 7
+SUCCESS: rule 10 can be thrown out due to 9
+SUCCESS: rule 10 can be thrown out due to 11
+SUCCESS: rule 10 can be thrown out due to 13
+SUCCESS: rule 13 can be thrown out due to 11
+SUCCESS: rule 15 can be thrown out due to 11
+SUCCESS: rule 16 can be thrown out due to 14
+SUCCESS: rule 20 can be thrown out due to 21
+SUCCESS: rule 22 can be thrown out due to 25
+SUCCESS: rule 24 can be thrown out due to 23
+SUCCESS: rule 27 can be thrown out due to 28
+SUCCESS: rule 30 can be thrown out due to 28
+SUCCESS: rule 31 can be thrown out due to 32
+SUCCESS: rule 33 can be thrown out due to 32
+SUCCESS: rule 35 can be thrown out due to 36
+SUCCESS: rule 35 can be thrown out due to 53
+SUCCESS: rule 37 can be thrown out due to 34
+SUCCESS: rule 37 can be thrown out due to 40
+SUCCESS: rule 37 can be thrown out due to 42
+SUCCESS: rule 38 can be thrown out due to 35
+SUCCESS: rule 38 can be thrown out due to 36
+SUCCESS: rule 38 can be thrown out due to 39
+SUCCESS: rule 38 can be thrown out due to 41
+SUCCESS: rule 38 can be thrown out due to 42
+SUCCESS: rule 38 can be thrown out due to 53
+SUCCESS: rule 39 can be thrown out due to 36
+SUCCESS: rule 39 can be thrown out due to 42
+SUCCESS: rule 40 can be thrown out due to 42
+SUCCESS: rule 41 can be thrown out due to 42
+SUCCESS: rule 41 can be thrown out due to 53
+SUCCESS: rule 44 can be thrown out due to 34
+SUCCESS: rule 44 can be thrown out due to 36
+SUCCESS: rule 44 can be thrown out due to 37
+SUCCESS: rule 44 can be thrown out due to 40
+SUCCESS: rule 44 can be thrown out due to 42
+SUCCESS: rule 44 can be thrown out due to 47
+SUCCESS: rule 44 can be thrown out due to 49
+SUCCESS: rule 44 can be thrown out due to 52
+SUCCESS: rule 45 can be thrown out due to 35
+SUCCESS: rule 45 can be thrown out due to 36
+SUCCESS: rule 45 can be thrown out due to 38
+SUCCESS: rule 45 can be thrown out due to 39
+SUCCESS: rule 45 can be thrown out due to 41
+SUCCESS: rule 45 can be thrown out due to 42
+SUCCESS: rule 45 can be thrown out due to 46
+SUCCESS: rule 45 can be thrown out due to 48
+SUCCESS: rule 45 can be thrown out due to 49
+SUCCESS: rule 45 can be thrown out due to 53
+SUCCESS: rule 46 can be thrown out due to 36
+SUCCESS: rule 46 can be thrown out due to 39
+SUCCESS: rule 46 can be thrown out due to 42
+SUCCESS: rule 46 can be thrown out due to 49
+SUCCESS: rule 46 can be thrown out due to 53
+SUCCESS: rule 47 can be thrown out due to 40
+SUCCESS: rule 47 can be thrown out due to 42
+SUCCESS: rule 47 can be thrown out due to 49
+SUCCESS: rule 48 can be thrown out due to 41
+SUCCESS: rule 48 can be thrown out due to 42
+SUCCESS: rule 48 can be thrown out due to 49
+SUCCESS: rule 48 can be thrown out due to 53
+SUCCESS: rule 49 can be thrown out due to 42
+SUCCESS: rule 50 can be thrown out due to 43
+SUCCESS: rule 51 can be thrown out due to 52
+SUCCESS: rule 51 can be thrown out due to 53
+Processing titanic...
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+WARNING: attribute PassengerId has more than 100 values, will be ignored.
+ If you haven't set maximum number of categories and you really need more categories and you know what you are doing, please use max_categories option to increase allowed number of categories.
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  7%|###                                                 |Elapsed Time: 0:00:00
+ 12%|######                                              |Elapsed Time: 0:00:00
+ 18%|#########                                           |Elapsed Time: 0:00:00
+ 20%|##########                                          |Elapsed Time: 0:00:00
+ 25%|#############                                       |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 2071, rules 207, times: prep 0.01sec, processing 0.39sec
+SUCCESS: rule 1 can be thrown out due to 6
+SUCCESS: rule 1 can be thrown out due to 42
+SUCCESS: rule 2 can be thrown out due to 6
+SUCCESS: rule 2 can be thrown out due to 7
+SUCCESS: rule 2 can be thrown out due to 42
+SUCCESS: rule 2 can be thrown out due to 43
+SUCCESS: rule 3 can be thrown out due to 4
+SUCCESS: rule 3 can be thrown out due to 6
+SUCCESS: rule 3 can be thrown out due to 32
+SUCCESS: rule 3 can be thrown out due to 36
+SUCCESS: rule 3 can be thrown out due to 42
+SUCCESS: rule 4 can be thrown out due to 6
+SUCCESS: rule 4 can be thrown out due to 36
+SUCCESS: rule 4 can be thrown out due to 42
+SUCCESS: rule 5 can be thrown out due to 39
+SUCCESS: rule 6 can be thrown out due to 42
+SUCCESS: rule 7 can be thrown out due to 42
+SUCCESS: rule 7 can be thrown out due to 43
+SUCCESS: rule 8 can be thrown out due to 44
+SUCCESS: rule 9 can be thrown out due to 10
+SUCCESS: rule 9 can be thrown out due to 12
+SUCCESS: rule 9 can be thrown out due to 15
+SUCCESS: rule 9 can be thrown out due to 16
+SUCCESS: rule 9 can be thrown out due to 18
+SUCCESS: rule 10 can be thrown out due to 12
+SUCCESS: rule 10 can be thrown out due to 16
+SUCCESS: rule 10 can be thrown out due to 18
+SUCCESS: rule 11 can be thrown out due to 5
+SUCCESS: rule 11 can be thrown out due to 17
+SUCCESS: rule 11 can be thrown out due to 39
+SUCCESS: rule 12 can be thrown out due to 18
+SUCCESS: rule 13 can be thrown out due to 18
+SUCCESS: rule 13 can be thrown out due to 19
+SUCCESS: rule 14 can be thrown out due to 20
+SUCCESS: rule 15 can be thrown out due to 16
+SUCCESS: rule 15 can be thrown out due to 18
+SUCCESS: rule 16 can be thrown out due to 18
+SUCCESS: rule 17 can be thrown out due to 39
+SUCCESS: rule 21 can be thrown out due to 22
+SUCCESS: rule 21 can be thrown out due to 23
+SUCCESS: rule 21 can be thrown out due to 26
+SUCCESS: rule 21 can be thrown out due to 27
+SUCCESS: rule 21 can be thrown out due to 28
+SUCCESS: rule 22 can be thrown out due to 27
+SUCCESS: rule 22 can be thrown out due to 28
+SUCCESS: rule 23 can be thrown out due to 28
+SUCCESS: rule 24 can be thrown out due to 28
+SUCCESS: rule 24 can be thrown out due to 29
+SUCCESS: rule 26 can be thrown out due to 27
+SUCCESS: rule 26 can be thrown out due to 28
+SUCCESS: rule 31 can be thrown out due to 35
+SUCCESS: rule 31 can be thrown out due to 39
+SUCCESS: rule 32 can be thrown out due to 36
+SUCCESS: rule 32 can be thrown out due to 42
+SUCCESS: rule 33 can be thrown out due to 36
+SUCCESS: rule 33 can be thrown out due to 37
+SUCCESS: rule 33 can be thrown out due to 42
+SUCCESS: rule 33 can be thrown out due to 43
+SUCCESS: rule 34 can be thrown out due to 38
+SUCCESS: rule 34 can be thrown out due to 44
+SUCCESS: rule 36 can be thrown out due to 42
+SUCCESS: rule 37 can be thrown out due to 42
+SUCCESS: rule 37 can be thrown out due to 43
+SUCCESS: rule 38 can be thrown out due to 44
+SUCCESS: rule 45 can be thrown out due to 46
+SUCCESS: rule 45 can be thrown out due to 47
+SUCCESS: rule 46 can be thrown out due to 47
+SUCCESS: rule 48 can be thrown out due to 49
+SUCCESS: rule 48 can be thrown out due to 50
+SUCCESS: rule 48 can be thrown out due to 66
+SUCCESS: rule 48 can be thrown out due to 70
+SUCCESS: rule 49 can be thrown out due to 50
+SUCCESS: rule 49 can be thrown out due to 70
+SUCCESS: rule 52 can be thrown out due to 50
+SUCCESS: rule 52 can be thrown out due to 70
+SUCCESS: rule 53 can be thrown out due to 50
+SUCCESS: rule 53 can be thrown out due to 52
+SUCCESS: rule 53 can be thrown out due to 70
+SUCCESS: rule 53 can be thrown out due to 74
+SUCCESS: rule 54 can be thrown out due to 48
+SUCCESS: rule 54 can be thrown out due to 49
+SUCCESS: rule 54 can be thrown out due to 50
+SUCCESS: rule 54 can be thrown out due to 55
+SUCCESS: rule 54 can be thrown out due to 56
+SUCCESS: rule 54 can be thrown out due to 59
+SUCCESS: rule 54 can be thrown out due to 60
+SUCCESS: rule 54 can be thrown out due to 62
+SUCCESS: rule 54 can be thrown out due to 66
+SUCCESS: rule 54 can be thrown out due to 70
+SUCCESS: rule 55 can be thrown out due to 49
+SUCCESS: rule 55 can be thrown out due to 50
+SUCCESS: rule 55 can be thrown out due to 56
+SUCCESS: rule 55 can be thrown out due to 60
+SUCCESS: rule 55 can be thrown out due to 66
+SUCCESS: rule 55 can be thrown out due to 70
+SUCCESS: rule 56 can be thrown out due to 50
+SUCCESS: rule 56 can be thrown out due to 70
+SUCCESS: rule 57 can be thrown out due to 50
+SUCCESS: rule 57 can be thrown out due to 52
+SUCCESS: rule 57 can be thrown out due to 56
+SUCCESS: rule 57 can be thrown out due to 60
+SUCCESS: rule 57 can be thrown out due to 70
+SUCCESS: rule 57 can be thrown out due to 74
+SUCCESS: rule 58 can be thrown out due to 59
+SUCCESS: rule 58 can be thrown out due to 60
+SUCCESS: rule 58 can be thrown out due to 62
+SUCCESS: rule 58 can be thrown out due to 66
+SUCCESS: rule 58 can be thrown out due to 70
+SUCCESS: rule 59 can be thrown out due to 60
+SUCCESS: rule 59 can be thrown out due to 66
+SUCCESS: rule 59 can be thrown out due to 70
+SUCCESS: rule 60 can be thrown out due to 70
+SUCCESS: rule 61 can be thrown out due to 60
+SUCCESS: rule 61 can be thrown out due to 70
+SUCCESS: rule 61 can be thrown out due to 74
+SUCCESS: rule 62 can be thrown out due to 66
+SUCCESS: rule 62 can be thrown out due to 70
+SUCCESS: rule 63 can be thrown out due to 66
+SUCCESS: rule 63 can be thrown out due to 67
+SUCCESS: rule 63 can be thrown out due to 70
+SUCCESS: rule 63 can be thrown out due to 71
+SUCCESS: rule 64 can be thrown out due to 62
+SUCCESS: rule 64 can be thrown out due to 66
+SUCCESS: rule 64 can be thrown out due to 68
+SUCCESS: rule 64 can be thrown out due to 70
+SUCCESS: rule 64 can be thrown out due to 74
+SUCCESS: rule 65 can be thrown out due to 62
+SUCCESS: rule 65 can be thrown out due to 64
+SUCCESS: rule 65 can be thrown out due to 66
+SUCCESS: rule 65 can be thrown out due to 68
+SUCCESS: rule 65 can be thrown out due to 69
+SUCCESS: rule 65 can be thrown out due to 70
+SUCCESS: rule 65 can be thrown out due to 74
+SUCCESS: rule 65 can be thrown out due to 75
+SUCCESS: rule 66 can be thrown out due to 70
+SUCCESS: rule 67 can be thrown out due to 70
+SUCCESS: rule 67 can be thrown out due to 71
+SUCCESS: rule 68 can be thrown out due to 66
+SUCCESS: rule 68 can be thrown out due to 70
+SUCCESS: rule 68 can be thrown out due to 74
+SUCCESS: rule 69 can be thrown out due to 66
+SUCCESS: rule 69 can be thrown out due to 68
+SUCCESS: rule 69 can be thrown out due to 70
+SUCCESS: rule 69 can be thrown out due to 74
+SUCCESS: rule 69 can be thrown out due to 75
+SUCCESS: rule 72 can be thrown out due to 70
+SUCCESS: rule 72 can be thrown out due to 71
+SUCCESS: rule 73 can be thrown out due to 70
+SUCCESS: rule 73 can be thrown out due to 71
+SUCCESS: rule 73 can be thrown out due to 72
+SUCCESS: rule 73 can be thrown out due to 74
+SUCCESS: rule 74 can be thrown out due to 70
+SUCCESS: rule 75 can be thrown out due to 70
+SUCCESS: rule 75 can be thrown out due to 74
+SUCCESS: rule 80 can be thrown out due to 79
+SUCCESS: rule 80 can be thrown out due to 99
+SUCCESS: rule 80 can be thrown out due to 203
+SUCCESS: rule 81 can be thrown out due to 79
+SUCCESS: rule 81 can be thrown out due to 80
+SUCCESS: rule 81 can be thrown out due to 99
+SUCCESS: rule 81 can be thrown out due to 203
+SUCCESS: rule 84 can be thrown out due to 88
+SUCCESS: rule 84 can be thrown out due to 92
+SUCCESS: rule 84 can be thrown out due to 103
+SUCCESS: rule 84 can be thrown out due to 186
+SUCCESS: rule 84 can be thrown out due to 196
+SUCCESS: rule 84 can be thrown out due to 207
+SUCCESS: rule 85 can be thrown out due to 181
+SUCCESS: rule 86 can be thrown out due to 90
+SUCCESS: rule 86 can be thrown out due to 184
+SUCCESS: rule 86 can be thrown out due to 194
+SUCCESS: rule 87 can be thrown out due to 91
+SUCCESS: rule 87 can be thrown out due to 102
+SUCCESS: rule 87 can be thrown out due to 195
+SUCCESS: rule 87 can be thrown out due to 206
+SUCCESS: rule 88 can be thrown out due to 92
+SUCCESS: rule 88 can be thrown out due to 103
+SUCCESS: rule 88 can be thrown out due to 196
+SUCCESS: rule 88 can be thrown out due to 207
+SUCCESS: rule 89 can be thrown out due to 190
+SUCCESS: rule 90 can be thrown out due to 194
+SUCCESS: rule 93 can be thrown out due to 85
+SUCCESS: rule 93 can be thrown out due to 89
+SUCCESS: rule 93 can be thrown out due to 181
+SUCCESS: rule 93 can be thrown out due to 190
+SUCCESS: rule 93 can be thrown out due to 197
+SUCCESS: rule 94 can be thrown out due to 89
+SUCCESS: rule 94 can be thrown out due to 190
+SUCCESS: rule 94 can be thrown out due to 198
+SUCCESS: rule 95 can be thrown out due to 99
+SUCCESS: rule 95 can be thrown out due to 199
+SUCCESS: rule 95 can be thrown out due to 203
+SUCCESS: rule 96 can be thrown out due to 200
+SUCCESS: rule 99 can be thrown out due to 203
+SUCCESS: rule 101 can be thrown out due to 205
+SUCCESS: rule 106 can be thrown out due to 107
+SUCCESS: rule 108 can be thrown out due to 85
+SUCCESS: rule 108 can be thrown out due to 122
+SUCCESS: rule 108 can be thrown out due to 181
+SUCCESS: rule 109 can be thrown out due to 112
+SUCCESS: rule 109 can be thrown out due to 123
+SUCCESS: rule 109 can be thrown out due to 126
+SUCCESS: rule 110 can be thrown out due to 113
+SUCCESS: rule 110 can be thrown out due to 121
+SUCCESS: rule 110 can be thrown out due to 127
+SUCCESS: rule 110 can be thrown out due to 136
+SUCCESS: rule 111 can be thrown out due to 89
+SUCCESS: rule 111 can be thrown out due to 125
+SUCCESS: rule 111 can be thrown out due to 190
+SUCCESS: rule 112 can be thrown out due to 126
+SUCCESS: rule 114 can be thrown out due to 85
+SUCCESS: rule 114 can be thrown out due to 89
+SUCCESS: rule 114 can be thrown out due to 93
+SUCCESS: rule 114 can be thrown out due to 108
+SUCCESS: rule 114 can be thrown out due to 111
+SUCCESS: rule 114 can be thrown out due to 122
+SUCCESS: rule 114 can be thrown out due to 125
+SUCCESS: rule 114 can be thrown out due to 128
+SUCCESS: rule 114 can be thrown out due to 181
+SUCCESS: rule 114 can be thrown out due to 190
+SUCCESS: rule 114 can be thrown out due to 197
+SUCCESS: rule 114 can be thrown out due to 198
+SUCCESS: rule 115 can be thrown out due to 89
+SUCCESS: rule 115 can be thrown out due to 94
+SUCCESS: rule 115 can be thrown out due to 111
+SUCCESS: rule 115 can be thrown out due to 125
+SUCCESS: rule 115 can be thrown out due to 129
+SUCCESS: rule 115 can be thrown out due to 190
+SUCCESS: rule 115 can be thrown out due to 198
+SUCCESS: rule 116 can be thrown out due to 119
+SUCCESS: rule 116 can be thrown out due to 130
+SUCCESS: rule 116 can be thrown out due to 134
+SUCCESS: rule 116 can be thrown out due to 203
+SUCCESS: rule 117 can be thrown out due to 96
+SUCCESS: rule 117 can be thrown out due to 132
+SUCCESS: rule 117 can be thrown out due to 200
+SUCCESS: rule 119 can be thrown out due to 134
+SUCCESS: rule 120 can be thrown out due to 135
+SUCCESS: rule 122 can be thrown out due to 181
+SUCCESS: rule 123 can be thrown out due to 126
+SUCCESS: rule 124 can be thrown out due to 127
+SUCCESS: rule 124 can be thrown out due to 136
+SUCCESS: rule 125 can be thrown out due to 190
+SUCCESS: rule 128 can be thrown out due to 122
+SUCCESS: rule 128 can be thrown out due to 125
+SUCCESS: rule 128 can be thrown out due to 181
+SUCCESS: rule 128 can be thrown out due to 190
+SUCCESS: rule 128 can be thrown out due to 197
+SUCCESS: rule 129 can be thrown out due to 125
+SUCCESS: rule 129 can be thrown out due to 190
+SUCCESS: rule 129 can be thrown out due to 198
+SUCCESS: rule 130 can be thrown out due to 134
+SUCCESS: rule 132 can be thrown out due to 200
+SUCCESS: rule 138 can be thrown out due to 139
+SUCCESS: rule 138 can be thrown out due to 143
+SUCCESS: rule 138 can be thrown out due to 147
+SUCCESS: rule 138 can be thrown out due to 153
+SUCCESS: rule 138 can be thrown out due to 154
+SUCCESS: rule 138 can be thrown out due to 158
+SUCCESS: rule 138 can be thrown out due to 162
+SUCCESS: rule 139 can be thrown out due to 143
+SUCCESS: rule 139 can be thrown out due to 147
+SUCCESS: rule 139 can be thrown out due to 154
+SUCCESS: rule 139 can be thrown out due to 158
+SUCCESS: rule 139 can be thrown out due to 162
+SUCCESS: rule 140 can be thrown out due to 85
+SUCCESS: rule 140 can be thrown out due to 89
+SUCCESS: rule 140 can be thrown out due to 108
+SUCCESS: rule 140 can be thrown out due to 122
+SUCCESS: rule 140 can be thrown out due to 125
+SUCCESS: rule 140 can be thrown out due to 144
+SUCCESS: rule 140 can be thrown out due to 155
+SUCCESS: rule 140 can be thrown out due to 159
+SUCCESS: rule 140 can be thrown out due to 181
+SUCCESS: rule 140 can be thrown out due to 190
+SUCCESS: rule 141 can be thrown out due to 145
+SUCCESS: rule 141 can be thrown out due to 156
+SUCCESS: rule 141 can be thrown out due to 160
+SUCCESS: rule 142 can be thrown out due to 88
+SUCCESS: rule 142 can be thrown out due to 92
+SUCCESS: rule 142 can be thrown out due to 103
+SUCCESS: rule 142 can be thrown out due to 110
+SUCCESS: rule 142 can be thrown out due to 113
+SUCCESS: rule 142 can be thrown out due to 121
+SUCCESS: rule 142 can be thrown out due to 124
+SUCCESS: rule 142 can be thrown out due to 127
+SUCCESS: rule 142 can be thrown out due to 136
+SUCCESS: rule 142 can be thrown out due to 146
+SUCCESS: rule 142 can be thrown out due to 152
+SUCCESS: rule 142 can be thrown out due to 161
+SUCCESS: rule 142 can be thrown out due to 167
+SUCCESS: rule 142 can be thrown out due to 186
+SUCCESS: rule 142 can be thrown out due to 196
+SUCCESS: rule 142 can be thrown out due to 207
+SUCCESS: rule 143 can be thrown out due to 147
+SUCCESS: rule 143 can be thrown out due to 158
+SUCCESS: rule 143 can be thrown out due to 162
+SUCCESS: rule 144 can be thrown out due to 159
+SUCCESS: rule 145 can be thrown out due to 160
+SUCCESS: rule 146 can be thrown out due to 92
+SUCCESS: rule 146 can be thrown out due to 103
+SUCCESS: rule 146 can be thrown out due to 113
+SUCCESS: rule 146 can be thrown out due to 121
+SUCCESS: rule 146 can be thrown out due to 127
+SUCCESS: rule 146 can be thrown out due to 136
+SUCCESS: rule 146 can be thrown out due to 196
+SUCCESS: rule 146 can be thrown out due to 207
+SUCCESS: rule 147 can be thrown out due to 162
+SUCCESS: rule 148 can be thrown out due to 96
+SUCCESS: rule 148 can be thrown out due to 117
+SUCCESS: rule 148 can be thrown out due to 132
+SUCCESS: rule 148 can be thrown out due to 163
+SUCCESS: rule 148 can be thrown out due to 200
+SUCCESS: rule 149 can be thrown out due to 147
+SUCCESS: rule 149 can be thrown out due to 162
+SUCCESS: rule 149 can be thrown out due to 164
+SUCCESS: rule 150 can be thrown out due to 119
+SUCCESS: rule 150 can be thrown out due to 134
+SUCCESS: rule 150 can be thrown out due to 165
+SUCCESS: rule 151 can be thrown out due to 120
+SUCCESS: rule 151 can be thrown out due to 135
+SUCCESS: rule 151 can be thrown out due to 166
+SUCCESS: rule 152 can be thrown out due to 103
+SUCCESS: rule 152 can be thrown out due to 121
+SUCCESS: rule 152 can be thrown out due to 136
+SUCCESS: rule 152 can be thrown out due to 207
+SUCCESS: rule 153 can be thrown out due to 154
+SUCCESS: rule 153 can be thrown out due to 158
+SUCCESS: rule 153 can be thrown out due to 162
+SUCCESS: rule 154 can be thrown out due to 158
+SUCCESS: rule 154 can be thrown out due to 162
+SUCCESS: rule 155 can be thrown out due to 122
+SUCCESS: rule 155 can be thrown out due to 159
+SUCCESS: rule 155 can be thrown out due to 181
+SUCCESS: rule 155 can be thrown out due to 190
+SUCCESS: rule 156 can be thrown out due to 160
+SUCCESS: rule 157 can be thrown out due to 124
+SUCCESS: rule 157 can be thrown out due to 127
+SUCCESS: rule 157 can be thrown out due to 136
+SUCCESS: rule 157 can be thrown out due to 161
+SUCCESS: rule 157 can be thrown out due to 167
+SUCCESS: rule 157 can be thrown out due to 186
+SUCCESS: rule 157 can be thrown out due to 196
+SUCCESS: rule 157 can be thrown out due to 207
+SUCCESS: rule 158 can be thrown out due to 162
+SUCCESS: rule 161 can be thrown out due to 127
+SUCCESS: rule 161 can be thrown out due to 136
+SUCCESS: rule 161 can be thrown out due to 196
+SUCCESS: rule 161 can be thrown out due to 207
+SUCCESS: rule 163 can be thrown out due to 132
+SUCCESS: rule 163 can be thrown out due to 200
+SUCCESS: rule 164 can be thrown out due to 162
+SUCCESS: rule 165 can be thrown out due to 134
+SUCCESS: rule 166 can be thrown out due to 135
+SUCCESS: rule 167 can be thrown out due to 136
+SUCCESS: rule 167 can be thrown out due to 207
+SUCCESS: rule 168 can be thrown out due to 139
+SUCCESS: rule 168 can be thrown out due to 143
+SUCCESS: rule 168 can be thrown out due to 147
+SUCCESS: rule 168 can be thrown out due to 154
+SUCCESS: rule 168 can be thrown out due to 158
+SUCCESS: rule 168 can be thrown out due to 162
+SUCCESS: rule 168 can be thrown out due to 169
+SUCCESS: rule 168 can be thrown out due to 170
+SUCCESS: rule 168 can be thrown out due to 171
+SUCCESS: rule 168 can be thrown out due to 172
+SUCCESS: rule 168 can be thrown out due to 174
+SUCCESS: rule 169 can be thrown out due to 143
+SUCCESS: rule 169 can be thrown out due to 147
+SUCCESS: rule 169 can be thrown out due to 158
+SUCCESS: rule 169 can be thrown out due to 162
+SUCCESS: rule 169 can be thrown out due to 172
+SUCCESS: rule 169 can be thrown out due to 174
+SUCCESS: rule 170 can be thrown out due to 147
+SUCCESS: rule 170 can be thrown out due to 162
+SUCCESS: rule 170 can be thrown out due to 174
+SUCCESS: rule 171 can be thrown out due to 154
+SUCCESS: rule 171 can be thrown out due to 158
+SUCCESS: rule 171 can be thrown out due to 162
+SUCCESS: rule 171 can be thrown out due to 172
+SUCCESS: rule 171 can be thrown out due to 174
+SUCCESS: rule 172 can be thrown out due to 158
+SUCCESS: rule 172 can be thrown out due to 162
+SUCCESS: rule 173 can be thrown out due to 125
+SUCCESS: rule 173 can be thrown out due to 159
+SUCCESS: rule 173 can be thrown out due to 190
+SUCCESS: rule 174 can be thrown out due to 162
+SUCCESS: rule 177 can be thrown out due to 186
+SUCCESS: rule 177 can be thrown out due to 196
+SUCCESS: rule 177 can be thrown out due to 207
+SUCCESS: rule 178 can be thrown out due to 187
+SUCCESS: rule 178 can be thrown out due to 200
+SUCCESS: rule 180 can be thrown out due to 189
+SUCCESS: rule 180 can be thrown out due to 202
+SUCCESS: rule 182 can be thrown out due to 181
+SUCCESS: rule 182 can be thrown out due to 190
+SUCCESS: rule 183 can be thrown out due to 181
+SUCCESS: rule 183 can be thrown out due to 190
+SUCCESS: rule 184 can be thrown out due to 194
+SUCCESS: rule 185 can be thrown out due to 195
+SUCCESS: rule 185 can be thrown out due to 206
+SUCCESS: rule 186 can be thrown out due to 196
+SUCCESS: rule 186 can be thrown out due to 207
+SUCCESS: rule 192 can be thrown out due to 190
+SUCCESS: rule 193 can be thrown out due to 190
+SUCCESS: rule 197 can be thrown out due to 181
+SUCCESS: rule 197 can be thrown out due to 190
+SUCCESS: rule 198 can be thrown out due to 190
+SUCCESS: rule 199 can be thrown out due to 203
+Processing diabetes...
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+ 20%|##########                                          |Elapsed Time: 0:00:00
+ 24%|############                                        |Elapsed Time: 0:00:00
+ 29%|###############                                     |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 63, rules 63, times: prep 0.02sec, processing 0.25sec
+SUCCESS: rule 2 can be thrown out due to 3
+SUCCESS: rule 4 can be thrown out due to 5
+SUCCESS: rule 6 can be thrown out due to 57
+SUCCESS: rule 7 can be thrown out due to 8
+SUCCESS: rule 10 can be thrown out due to 11
+SUCCESS: rule 10 can be thrown out due to 13
+SUCCESS: rule 11 can be thrown out due to 13
+SUCCESS: rule 12 can be thrown out due to 13
+SUCCESS: rule 12 can be thrown out due to 18
+SUCCESS: rule 14 can be thrown out due to 13
+SUCCESS: rule 19 can be thrown out due to 13
+SUCCESS: rule 19 can be thrown out due to 20
+SUCCESS: rule 19 can be thrown out due to 22
+SUCCESS: rule 20 can be thrown out due to 22
+SUCCESS: rule 21 can be thrown out due to 22
+SUCCESS: rule 21 can be thrown out due to 30
+SUCCESS: rule 26 can be thrown out due to 22
+SUCCESS: rule 27 can be thrown out due to 22
+SUCCESS: rule 28 can be thrown out due to 22
+SUCCESS: rule 29 can be thrown out due to 30
+SUCCESS: rule 32 can be thrown out due to 22
+SUCCESS: rule 32 can be thrown out due to 33
+SUCCESS: rule 35 can be thrown out due to 33
+SUCCESS: rule 36 can be thrown out due to 33
+SUCCESS: rule 46 can be thrown out due to 47
+SUCCESS: rule 48 can be thrown out due to 47
+SUCCESS: rule 48 can be thrown out due to 49
+SUCCESS: rule 50 can be thrown out due to 51
+SUCCESS: rule 52 can be thrown out due to 53
+Processing loans...
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+WARNING: attribute loan_id has more than 100 values, will be ignored.
+ If you haven't set maximum number of categories and you really need more categories and you know what you are doing, please use max_categories option to increase allowed number of categories.
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+  5%|##                                                  |Elapsed Time: 0:00:00
+  8%|####                                                |Elapsed Time: 0:00:00
+ 11%|#####                                               |Elapsed Time: 0:00:00
+ 14%|#######                                             |Elapsed Time: 0:00:00
+ 19%|##########                                          |Elapsed Time: 0:00:00
+ 21%|##########                                          |Elapsed Time: 0:00:00
+ 23%|############                                        |Elapsed Time: 0:00:00
+ 26%|#############                                       |Elapsed Time: 0:00:00
+ 31%|################                                    |Elapsed Time: 0:00:00
+ 47%|########################                            |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 11392, rules 55, times: prep 0.05sec, processing 0.88sec
+SUCCESS: rule 1 can be thrown out due to 2
+SUCCESS: rule 1 can be thrown out due to 3
+SUCCESS: rule 1 can be thrown out due to 6
+SUCCESS: rule 4 can be thrown out due to 5
+SUCCESS: rule 4 can be thrown out due to 6
+SUCCESS: rule 8 can be thrown out due to 6
+SUCCESS: rule 9 can be thrown out due to 6
+SUCCESS: rule 11 can be thrown out due to 5
+SUCCESS: rule 11 can be thrown out due to 6
+SUCCESS: rule 12 can be thrown out due to 10
+SUCCESS: rule 22 can be thrown out due to 21
+SUCCESS: rule 45 can be thrown out due to 35
+SUCCESS: rule 45 can be thrown out due to 42
+SUCCESS: rule 45 can be thrown out due to 52
+SUCCESS: rule 46 can be thrown out due to 36
+SUCCESS: rule 46 can be thrown out due to 43
+SUCCESS: rule 46 can be thrown out due to 54
+SUCCESS: rule 50 can be thrown out due to 51
+SUCCESS: rule 53 can be thrown out due to 52
+
+Table 1: Comparison of Full Rule Sets and Pruned Minimal Rule Sets
+
+                      Full Rule Set           ||         Minimal Rule Set       
+Dataset        Rules     Cat      %     Lit      %  ||   Rules     Cat      %     Lit      %
+--------------------------------------------------------------------------------------------
+Accidents         53      46    87%      40    75%  ||      21      19    90%      12    57%
+Titanic          207     195    94%     201    97%  ||      70      60    86%      64    91%
+Diabetes          63      58    92%      45    71%  ||      41      36    88%      27    66%
+Loans             55      52    95%      55   100%  ||      44      41    93%      44   100%
+--------------------------------------------------------------------------------------------
+
+--- stderr ---
+/home/petemm/clm_coloring/repo/lib/datasets.py:68: DtypeWarning: Columns (0: Casualties, 1: District2+) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(fname, encoding='cp1250', sep='\t')

@@ -1,0 +1,155 @@
+Cleverminer version  1.2.6
+Processing accidents...
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  0%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  1%|                                                    |Elapsed Time: 0:00:00
+  1%|#                                                   |Elapsed Time: 0:00:00
+  1%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  4%|##                                                  |Elapsed Time: 0:00:01
+  5%|##                                                  |Elapsed Time: 0:00:01
+  5%|##                                                  |Elapsed Time: 0:00:01
+  5%|###                                                 |Elapsed Time: 0:00:01
+  5%|###                                                 |Elapsed Time: 0:00:01
+  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:02
+  7%|###                                                 |Elapsed Time: 0:00:02
+  7%|####                                                |Elapsed Time: 0:00:02
+  7%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:03
+  9%|####                                                |Elapsed Time: 0:00:03
+  9%|####                                                |Elapsed Time: 0:00:03
+ 10%|#####                                               |Elapsed Time: 0:00:03
+ 10%|#####                                               |Elapsed Time: 0:00:03
+ 10%|#####                                               |Elapsed Time: 0:00:03
+ 10%|#####                                               |Elapsed Time: 0:00:03
+ 11%|#####                                               |Elapsed Time: 0:00:03
+ 12%|######                                              |Elapsed Time: 0:00:03
+ 12%|######                                              |Elapsed Time: 0:00:03
+ 13%|######                                              |Elapsed Time: 0:00:04
+ 14%|#######                                             |Elapsed Time: 0:00:04
+ 15%|#######                                             |Elapsed Time: 0:00:04
+ 16%|########                                            |Elapsed Time: 0:00:04
+ 22%|###########                                         |Elapsed Time: 0:00:04
+ 24%|############                                        |Elapsed Time: 0:00:04
+ 25%|#############                                       |Elapsed Time: 0:00:04
+ 28%|##############                                      |Elapsed Time: 0:00:04
+ 29%|###############                                     |Elapsed Time: 0:00:04
+ 33%|#################                                   |Elapsed Time: 0:00:04
+100%|####################################################|Elapsed Time: 0:00:04
+Done. Total verifications : 1906, rules 53, times: prep 1.24sec, processing 4.91sec
+  done (53 input rules)
+Processing titanic...
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+WARNING: attribute PassengerId has more than 100 values, will be ignored.
+ If you haven't set maximum number of categories and you really need more categories and you know what you are doing, please use max_categories option to increase allowed number of categories.
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  7%|###                                                 |Elapsed Time: 0:00:00
+ 12%|######                                              |Elapsed Time: 0:00:00
+ 18%|#########                                           |Elapsed Time: 0:00:00
+ 20%|##########                                          |Elapsed Time: 0:00:00
+ 25%|#############                                       |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 2071, rules 207, times: prep 0.01sec, processing 0.39sec
+  done (207 input rules)
+Processing diabetes...
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+ 20%|##########                                          |Elapsed Time: 0:00:00
+ 25%|#############                                       |Elapsed Time: 0:00:00
+ 30%|###############                                     |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 63, rules 63, times: prep 0.02sec, processing 0.24sec
+  done (63 input rules)
+Processing loans...
+Cleverminer version 1.2.6.
+Starting data preparation ...
+Automatically reordering numeric categories ...
+Automatically reordering numeric categories ...done
+WARNING: attribute loan_id has more than 100 values, will be ignored.
+ If you haven't set maximum number of categories and you really need more categories and you know what you are doing, please use max_categories option to increase allowed number of categories.
+Encoding columns into bit-form...
+Encoding columns into bit-form...done
+Data preparation finished.
+Will go for  4ftMiner
+Starting to mine rules.
+  0%|                                                    |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
+  5%|##                                                  |Elapsed Time: 0:00:00
+  8%|####                                                |Elapsed Time: 0:00:00
+ 11%|#####                                               |Elapsed Time: 0:00:00
+ 14%|#######                                             |Elapsed Time: 0:00:00
+ 15%|#######                                             |Elapsed Time: 0:00:00
+ 19%|##########                                          |Elapsed Time: 0:00:00
+ 22%|###########                                         |Elapsed Time: 0:00:00
+ 24%|############                                        |Elapsed Time: 0:00:00
+ 26%|#############                                       |Elapsed Time: 0:00:00
+ 31%|################                                    |Elapsed Time: 0:00:00
+ 47%|########################                            |Elapsed Time: 0:00:00
+100%|####################################################|Elapsed Time: 0:00:00
+Done. Total verifications : 11392, rules 55, times: prep 0.05sec, processing 0.93sec
+  done (55 input rules)
+
+Table 3: Number of rules after pruning
+
+Method                  Accidents (53)     Titanic (207)     Diabetes (63)        Loans (55)
+--------------------------------------------------------------------------------------------
+CLM Phase 1 red                     21                20                39                27
+CLM Phase 1 red+yellow                14                15                39                27
+CLM Phase 2 red                     19                11                39                 3
+CLM Phase 2 red+yellow                11                 2                39                 2
+QCBA literal                        37                65                55                34
+PEP per attribute                   37                62                55                34
+RIPPER metric                       37                65                55                34
+delta-TAR d=0                       53               166                61                49
+delta-TAR d=0.05                    48               141                60                49
+delta-TAR d=0.10                    45               141                60                49
+Hamalainen a=0.05                   53               207                34                55
+Hamalainen a=0.01                   53               207                27                15
+Whole-rule chi2 a=0.05                53               207                44                55
+Whole-rule chi2 a=0.01                53               207                37                55
+--------------------------------------------------------------------------------------------
+
+--- stderr ---
+/home/petemm/clm_coloring/repo/lib/datasets.py:68: DtypeWarning: Columns (0: Casualties, 1: District2+) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(fname, encoding='cp1250', sep='\t')

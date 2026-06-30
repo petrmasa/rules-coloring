@@ -14,11 +14,11 @@ class action_literals:
     debug = False
     row_count=None
 
-    def __init__(self,clm):
-        self.clm2 = clm
-        self.row_count=clm.data['rows_count']
 
-    class bcolors:
+    red_threshold = 1.96 #two-tailed z-test value for alpha=0.05
+    yellow_threshold = 3.89 #two-tailed z-test value for alpha=0.0001
+
+    class ansicolors:
         HEADER = '\033[95m'
         OKBLUE = '\033[94m'
         OKCYAN = '\033[96m'
@@ -36,6 +36,7 @@ class action_literals:
         PURPLE = '\033[0;35m'
         CYAN = '\033[0;36m'
         GREY = '\033[0;37m'
+        YELLOWORANGE = '\033[38;5;214m'
 
         DARK_GREY = '\033[1;30m'
         LIGHT_RED = '\033[1;31m'
@@ -50,9 +51,32 @@ class action_literals:
 
 
 
+    class texcolors:
+        RED    = '\\textcolor{red}{'
+        YELLOW = '\\textcolor{YellowOrange}{'
+        GREEN  = '\\textcolor{green}{'
+        ENDC   = '}'
+
+    bcolors = ansicolors
+
     canbeignored = bcolors.RED
     mightbeignored = bcolors.YELLOW
     cannotbeignored = bcolors.GREEN
+    ENDC = bcolors.ENDC
+
+
+
+    def __init__(self, clm, color_style=None):
+        self.clm2 = clm
+        self.row_count = clm.data['rows_count']
+        colors = self.texcolors if color_style=='TeX' else self.bcolors
+        self.canbeignored    = colors.RED
+        self.mightbeignored  = colors.YELLOW
+        self.cannotbeignored = colors.GREEN
+        self.ENDC            = colors.ENDC
+
+   
+
 
 
     def _get_attribute_type(self,cedent=None, attribute=None):
@@ -184,18 +208,18 @@ class action_literals:
                 base_full = ff_full[0]
                 base = ff[0]
                 z_score,p_val,pimratioabs = self.calc_z_score(ff_full,ff)
-                if abs(z_score)>2*1.96:#20:#pimratioabs>1.5:
+                if abs(z_score)>self.yellow_threshold:
                     if print_details:
-                        print(f"   When Var {self.cannotbeignored}{vn}{self.bcolors.ENDC} is ignored: {self.cannotbeignored}confidence {conf_full:.3f} -> {conf:.3f}, base {base_full} -> {base}{self.bcolors.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
-                    ff_text= ff_text + self.cannotbeignored+vn+self.bcolors.ENDC
-                elif abs(z_score)>1.96:#pimratioabs>1.2:
+                        print(f"   When Var {self.cannotbeignored}{vn}{self.ENDC} is ignored: {self.cannotbeignored}confidence {conf_full:.3f} -> {conf:.3f}, base {base_full} -> {base}{self.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
+                    ff_text= ff_text + self.cannotbeignored+vn+self.ENDC
+                elif abs(z_score)>self.red_threshold:
                     if print_details:
-                        print(f"   When Var {self.mightbeignored}{vn}{self.bcolors.ENDC} is ignored: {self.mightbeignored}confidence {conf_full:.3f} -> {conf:.3f}, base {base_full} -> {base}{self.bcolors.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
-                    ff_text= ff_text + self.mightbeignored+vn+self.bcolors.ENDC
+                        print(f"   When Var {self.mightbeignored}{vn}{self.ENDC} is ignored: {self.mightbeignored}confidence {conf_full:.3f} -> {conf:.3f}, base {base_full} -> {base}{self.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
+                    ff_text= ff_text + self.mightbeignored+vn+self.ENDC
                 else:
                     if print_details:
-                        print(f"   When Var {self.canbeignored}{vn}{self.bcolors.ENDC} is ignored: confidence {self.canbeignored}{conf_full:.3f} -> {conf:.3f}, base {base_full} -> {base}{self.bcolors.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
-                    ff_text= ff_text+self.canbeignored+ vn+self.bcolors.ENDC
+                        print(f"   When Var {self.canbeignored}{vn}{self.ENDC} is ignored: confidence {self.canbeignored}{conf_full:.3f} -> {conf:.3f}, base {base_full} -> {base}{self.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
+                    ff_text= ff_text+self.canbeignored+ vn+self.ENDC
                     stats['has_ignorable_literal'] = True
                 ff_text=ff_text +'('
 
@@ -240,18 +264,18 @@ class action_literals:
                         if print_details:
                             print(f"   ... varname's {vn} category {cn} cannot be ignored due to either single category or the ordinal data type and not eligible (middle) category cannot be thrown out")
                         ff_text = ff_text + cn
-                    elif abs(z_score)>20:# pimratioabs>1.5:
+                    elif abs(z_score)>self.yellow_threshold:
                         if print_details:
-                            print(f"   ... when varname's {self.cannotbeignored}{vn}{self.bcolors.ENDC} category {self.cannotbeignored}{cn}{self.bcolors.ENDC} ignored : confidence {self.cannotbeignored}{conf_full:.3f} -> {conf2:.3f}, base {base_full} -> {base2}{self.bcolors.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
-                        ff_text = ff_text + self.cannotbeignored + cn + self.bcolors.ENDC
-                    elif abs(z_score)>1.96: #pimratioabs>1.2:
+                            print(f"   ... when varname's {self.cannotbeignored}{vn}{self.ENDC} category {self.cannotbeignored}{cn}{self.ENDC} ignored : confidence {self.cannotbeignored}{conf_full:.3f} -> {conf2:.3f}, base {base_full} -> {base2}{self.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
+                        ff_text = ff_text + self.cannotbeignored + cn + self.ENDC
+                    elif abs(z_score)>self.red_threshold:
                         if print_details:
-                            print(f"   ... when varname's {self.mightbeignored}{vn}{self.bcolors.ENDC} category {self.mightbeignored}{cn}{self.bcolors.ENDC} ignored : confidence {self.mightbeignored}{conf_full:.3f} -> {conf2:.3f}, base {base_full} -> {base2}{self.bcolors.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
-                        ff_text = ff_text + self.mightbeignored + cn + self.bcolors.ENDC
+                            print(f"   ... when varname's {self.mightbeignored}{vn}{self.ENDC} category {self.mightbeignored}{cn}{self.ENDC} ignored : confidence {self.mightbeignored}{conf_full:.3f} -> {conf2:.3f}, base {base_full} -> {base2}{self.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
+                        ff_text = ff_text + self.mightbeignored + cn + self.ENDC
                     else:
                         if print_details:
-                            print(f"   ... when varname's {self.canbeignored}{vn}{self.bcolors.ENDC} category {self.canbeignored}{cn}{self.bcolors.ENDC} ignored : confidence {self.canbeignored}{conf_full:.3f} -> {conf2:.3f}, base {base_full} -> {base2}{self.bcolors.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
-                        ff_text = ff_text +self.canbeignored + cn + self.bcolors.ENDC
+                            print(f"   ... when varname's {self.canbeignored}{vn}{self.ENDC} category {self.canbeignored}{cn}{self.ENDC} ignored : confidence {self.canbeignored}{conf_full:.3f} -> {conf2:.3f}, base {base_full} -> {base2}{self.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
+                        ff_text = ff_text +self.canbeignored + cn + self.ENDC
                         stats['has_ignorable_category'] = True
 
 
@@ -275,7 +299,7 @@ class action_literals:
 
     def print_rulelist(self,ignore_rules=set(),print_stats=False):
         print(
-            f"\nLEGEND: \n  {self.cannotbeignored}ATTRIBUTE/VALUE IS VERY IMPORTANT FOR INTERPRETATION AND CANNOT BE IGNORED{self.bcolors.ENDC}\n  {self.mightbeignored}ATTRIBUTE/VALUE IS SIGNIFICANT FOR INTERPRETATION{self.bcolors.ENDC}\n  {self.canbeignored}ATTRIBUTE/VALUE SHOULD NOT BE USED IN INTERPRETATION AND CAN BE IGNORED{self.bcolors.ENDC}\n  VALUE IS NOT ELIGIBLE FOR ASSESSING THE IMPORTANCE (E.G. A MIDDLE CATEGORY OF AN ORDINAL SEQUENCE)")
+            f"\nLEGEND: \n  {self.cannotbeignored}ATTRIBUTE/VALUE IS VERY IMPORTANT FOR INTERPRETATION AND CANNOT BE IGNORED{self.ENDC}\n  {self.mightbeignored}ATTRIBUTE/VALUE MIGHT BE SIGNIFICANT FOR INTERPRETATION{self.ENDC}\n  {self.canbeignored}ATTRIBUTE/VALUE SHOULD NOT BE USED IN INTERPRETATION AND CAN BE IGNORED{self.ENDC}\n  VALUE IS NOT ELIGIBLE FOR ASSESSING THE IMPORTANCE (E.G. A MIDDLE CATEGORY OF AN ORDINAL SEQUENCE)")
 
         print("\n RULE_ID BASE  CONF   AAD   RULE_TEXT")
         rules_with_ignorable_literal = 0
