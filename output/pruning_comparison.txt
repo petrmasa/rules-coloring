@@ -12,7 +12,6 @@ Starting to mine rules.
   0%|                                                    |Elapsed Time: 0:00:00
   0%|                                                    |Elapsed Time: 0:00:00
   1%|                                                    |Elapsed Time: 0:00:00
-  1%|                                                    |Elapsed Time: 0:00:00
   1%|#                                                   |Elapsed Time: 0:00:00
   1%|#                                                   |Elapsed Time: 0:00:00
   2%|#                                                   |Elapsed Time: 0:00:00
@@ -27,22 +26,21 @@ Starting to mine rules.
   4%|##                                                  |Elapsed Time: 0:00:01
   4%|##                                                  |Elapsed Time: 0:00:01
   5%|##                                                  |Elapsed Time: 0:00:01
-  5%|##                                                  |Elapsed Time: 0:00:01
   5%|###                                                 |Elapsed Time: 0:00:01
   5%|###                                                 |Elapsed Time: 0:00:01
-  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:01
   6%|###                                                 |Elapsed Time: 0:00:02
   6%|###                                                 |Elapsed Time: 0:00:02
   6%|###                                                 |Elapsed Time: 0:00:02
   6%|###                                                 |Elapsed Time: 0:00:02
   7%|###                                                 |Elapsed Time: 0:00:02
   7%|####                                                |Elapsed Time: 0:00:02
-  7%|####                                                |Elapsed Time: 0:00:02
   8%|####                                                |Elapsed Time: 0:00:02
   8%|####                                                |Elapsed Time: 0:00:02
-  8%|####                                                |Elapsed Time: 0:00:03
-  9%|####                                                |Elapsed Time: 0:00:03
-  9%|####                                                |Elapsed Time: 0:00:03
+  8%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:02
+  9%|####                                                |Elapsed Time: 0:00:02
+  9%|#####                                               |Elapsed Time: 0:00:03
  10%|#####                                               |Elapsed Time: 0:00:03
  10%|#####                                               |Elapsed Time: 0:00:03
  10%|#####                                               |Elapsed Time: 0:00:03
@@ -50,18 +48,16 @@ Starting to mine rules.
  11%|#####                                               |Elapsed Time: 0:00:03
  12%|######                                              |Elapsed Time: 0:00:03
  12%|######                                              |Elapsed Time: 0:00:03
- 13%|######                                              |Elapsed Time: 0:00:04
- 14%|#######                                             |Elapsed Time: 0:00:04
- 15%|#######                                             |Elapsed Time: 0:00:04
- 16%|########                                            |Elapsed Time: 0:00:04
+ 14%|#######                                             |Elapsed Time: 0:00:03
+ 15%|#######                                             |Elapsed Time: 0:00:03
+ 20%|##########                                          |Elapsed Time: 0:00:03
  22%|###########                                         |Elapsed Time: 0:00:04
  24%|############                                        |Elapsed Time: 0:00:04
- 25%|#############                                       |Elapsed Time: 0:00:04
  28%|##############                                      |Elapsed Time: 0:00:04
  29%|###############                                     |Elapsed Time: 0:00:04
  33%|#################                                   |Elapsed Time: 0:00:04
 100%|####################################################|Elapsed Time: 0:00:04
-Done. Total verifications : 1906, rules 53, times: prep 1.24sec, processing 4.91sec
+Done. Total verifications : 1906, rules 53, times: prep 1.37sec, processing 4.62sec
   done (53 input rules)
 Processing titanic...
 Cleverminer version 1.2.6.
@@ -82,7 +78,7 @@ Starting to mine rules.
  20%|##########                                          |Elapsed Time: 0:00:00
  25%|#############                                       |Elapsed Time: 0:00:00
 100%|####################################################|Elapsed Time: 0:00:00
-Done. Total verifications : 2071, rules 207, times: prep 0.01sec, processing 0.39sec
+Done. Total verifications : 2071, rules 207, times: prep 0.02sec, processing 0.39sec
   done (207 input rules)
 Processing diabetes...
 Cleverminer version 1.2.6.
@@ -96,10 +92,11 @@ Will go for  4ftMiner
 Starting to mine rules.
   0%|                                                    |Elapsed Time: 0:00:00
  20%|##########                                          |Elapsed Time: 0:00:00
- 25%|#############                                       |Elapsed Time: 0:00:00
- 30%|###############                                     |Elapsed Time: 0:00:00
+ 24%|############                                        |Elapsed Time: 0:00:00
+ 27%|##############                                      |Elapsed Time: 0:00:00
+ 42%|#####################                               |Elapsed Time: 0:00:00
 100%|####################################################|Elapsed Time: 0:00:00
-Done. Total verifications : 63, rules 63, times: prep 0.02sec, processing 0.24sec
+Done. Total verifications : 63, rules 63, times: prep 0.11sec, processing 0.26sec
   done (63 input rules)
 Processing loans...
 Cleverminer version 1.2.6.
@@ -119,7 +116,7 @@ Starting to mine rules.
   8%|####                                                |Elapsed Time: 0:00:00
  11%|#####                                               |Elapsed Time: 0:00:00
  14%|#######                                             |Elapsed Time: 0:00:00
- 15%|#######                                             |Elapsed Time: 0:00:00
+ 19%|##########                                          |Elapsed Time: 0:00:00
  19%|##########                                          |Elapsed Time: 0:00:00
  22%|###########                                         |Elapsed Time: 0:00:00
  24%|############                                        |Elapsed Time: 0:00:00
@@ -127,17 +124,17 @@ Starting to mine rules.
  31%|################                                    |Elapsed Time: 0:00:00
  47%|########################                            |Elapsed Time: 0:00:00
 100%|####################################################|Elapsed Time: 0:00:00
-Done. Total verifications : 11392, rules 55, times: prep 0.05sec, processing 0.93sec
+Done. Total verifications : 11392, rules 55, times: prep 0.06sec, processing 0.91sec
   done (55 input rules)
 
 Table 3: Number of rules after pruning
 
 Method                  Accidents (53)     Titanic (207)     Diabetes (63)        Loans (55)
 --------------------------------------------------------------------------------------------
-CLM Phase 1 red                     21                20                39                27
-CLM Phase 1 red+yellow                14                15                39                27
-CLM Phase 2 red                     19                11                39                 3
-CLM Phase 2 red+yellow                11                 2                39                 2
+CLM Phase 1 red                     36                29                40                27
+CLM Phase 1 red+yellow                31                18                39                27
+CLM Phase 2 red                     36                23                40                16
+CLM Phase 2 red+yellow                30                 7                39                14
 QCBA literal                        37                65                55                34
 PEP per attribute                   37                62                55                34
 RIPPER metric                       37                65                55                34

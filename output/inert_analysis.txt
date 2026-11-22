@@ -14,23 +14,22 @@ Starting to mine rules.
   1%|                                                    |Elapsed Time: 0:00:00
   1%|#                                                   |Elapsed Time: 0:00:00
   1%|#                                                   |Elapsed Time: 0:00:00
-  1%|#                                                   |Elapsed Time: 0:00:00
   2%|#                                                   |Elapsed Time: 0:00:00
   2%|#                                                   |Elapsed Time: 0:00:00
   2%|#                                                   |Elapsed Time: 0:00:00
-  3%|#                                                   |Elapsed Time: 0:00:00
+  2%|#                                                   |Elapsed Time: 0:00:00
   3%|#                                                   |Elapsed Time: 0:00:00
   3%|#                                                   |Elapsed Time: 0:00:01
   4%|##                                                  |Elapsed Time: 0:00:01
   4%|##                                                  |Elapsed Time: 0:00:01
   4%|##                                                  |Elapsed Time: 0:00:01
   4%|##                                                  |Elapsed Time: 0:00:01
-  4%|##                                                  |Elapsed Time: 0:00:01
+  5%|##                                                  |Elapsed Time: 0:00:01
   5%|##                                                  |Elapsed Time: 0:00:01
   5%|###                                                 |Elapsed Time: 0:00:01
   5%|###                                                 |Elapsed Time: 0:00:01
   6%|###                                                 |Elapsed Time: 0:00:01
-  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:01
   6%|###                                                 |Elapsed Time: 0:00:02
   6%|###                                                 |Elapsed Time: 0:00:02
   6%|###                                                 |Elapsed Time: 0:00:02
@@ -40,27 +39,25 @@ Starting to mine rules.
   8%|####                                                |Elapsed Time: 0:00:02
   8%|####                                                |Elapsed Time: 0:00:02
   8%|####                                                |Elapsed Time: 0:00:02
-  9%|####                                                |Elapsed Time: 0:00:03
-  9%|####                                                |Elapsed Time: 0:00:03
+  9%|####                                                |Elapsed Time: 0:00:02
+  9%|####                                                |Elapsed Time: 0:00:02
  10%|#####                                               |Elapsed Time: 0:00:03
  10%|#####                                               |Elapsed Time: 0:00:03
  10%|#####                                               |Elapsed Time: 0:00:03
  10%|#####                                               |Elapsed Time: 0:00:03
- 11%|#####                                               |Elapsed Time: 0:00:03
  11%|#####                                               |Elapsed Time: 0:00:03
  12%|######                                              |Elapsed Time: 0:00:03
  12%|######                                              |Elapsed Time: 0:00:03
  14%|#######                                             |Elapsed Time: 0:00:03
- 15%|#######                                             |Elapsed Time: 0:00:04
- 20%|##########                                          |Elapsed Time: 0:00:04
- 22%|###########                                         |Elapsed Time: 0:00:04
+ 15%|#######                                             |Elapsed Time: 0:00:03
+ 20%|##########                                          |Elapsed Time: 0:00:03
+ 22%|###########                                         |Elapsed Time: 0:00:03
  24%|############                                        |Elapsed Time: 0:00:04
- 25%|#############                                       |Elapsed Time: 0:00:04
  28%|##############                                      |Elapsed Time: 0:00:04
  29%|###############                                     |Elapsed Time: 0:00:04
  33%|#################                                   |Elapsed Time: 0:00:04
 100%|####################################################|Elapsed Time: 0:00:04
-Done. Total verifications : 1906, rules 53, times: prep 1.21sec, processing 4.81sec
+Done. Total verifications : 1906, rules 53, times: prep 1.33sec, processing 4.48sec
 SUCCESS: rule 1 can be thrown out due to 42
 SUCCESS: rule 1 can be thrown out due to 53
 SUCCESS: rule 2 can be thrown out due to 1
@@ -159,7 +156,7 @@ Starting to mine rules.
  20%|##########                                          |Elapsed Time: 0:00:00
  25%|#############                                       |Elapsed Time: 0:00:00
 100%|####################################################|Elapsed Time: 0:00:00
-Done. Total verifications : 2071, rules 207, times: prep 0.01sec, processing 0.39sec
+Done. Total verifications : 2071, rules 207, times: prep 0.01sec, processing 0.36sec
 SUCCESS: rule 1 can be thrown out due to 6
 SUCCESS: rule 1 can be thrown out due to 42
 SUCCESS: rule 2 can be thrown out due to 6
@@ -581,10 +578,10 @@ Will go for  4ftMiner
 Starting to mine rules.
   0%|                                                    |Elapsed Time: 0:00:00
  20%|##########                                          |Elapsed Time: 0:00:00
- 24%|############                                        |Elapsed Time: 0:00:00
- 29%|###############                                     |Elapsed Time: 0:00:00
+ 25%|#############                                       |Elapsed Time: 0:00:00
+ 30%|###############                                     |Elapsed Time: 0:00:00
 100%|####################################################|Elapsed Time: 0:00:00
-Done. Total verifications : 63, rules 63, times: prep 0.02sec, processing 0.25sec
+Done. Total verifications : 63, rules 63, times: prep 0.02sec, processing 0.23sec
 SUCCESS: rule 2 can be thrown out due to 3
 SUCCESS: rule 4 can be thrown out due to 5
 SUCCESS: rule 6 can be thrown out due to 57
@@ -636,10 +633,10 @@ Starting to mine rules.
  21%|##########                                          |Elapsed Time: 0:00:00
  23%|############                                        |Elapsed Time: 0:00:00
  26%|#############                                       |Elapsed Time: 0:00:00
- 31%|################                                    |Elapsed Time: 0:00:00
- 47%|########################                            |Elapsed Time: 0:00:00
+ 33%|#################                                   |Elapsed Time: 0:00:00
+ 60%|###############################                     |Elapsed Time: 0:00:00
 100%|####################################################|Elapsed Time: 0:00:00
-Done. Total verifications : 11392, rules 55, times: prep 0.05sec, processing 0.88sec
+Done. Total verifications : 11392, rules 55, times: prep 0.05sec, processing 0.83sec
 SUCCESS: rule 1 can be thrown out due to 2
 SUCCESS: rule 1 can be thrown out due to 3
 SUCCESS: rule 1 can be thrown out due to 6
@@ -665,10 +662,10 @@ Table 1: Comparison of Full Rule Sets and Pruned Minimal Rule Sets
                       Full Rule Set           ||         Minimal Rule Set       
 Dataset        Rules     Cat      %     Lit      %  ||   Rules     Cat      %     Lit      %
 --------------------------------------------------------------------------------------------
-Accidents         53      46    87%      40    75%  ||      21      19    90%      12    57%
-Titanic          207     195    94%     201    97%  ||      70      60    86%      64    91%
-Diabetes          63      58    92%      45    71%  ||      41      36    88%      27    66%
-Loans             55      52    95%      55   100%  ||      44      41    93%      44   100%
+Accidents         53      32    60%      19    36%  ||      21      15    71%       5    24%
+Titanic          207     191    92%     189    91%  ||      70      58    83%      56    80%
+Diabetes          63      50    79%      39    62%  ||      41      29    71%      24    59%
+Loans             55      52    95%      48    87%  ||      44      41    93%      37    84%
 --------------------------------------------------------------------------------------------
 
 --- stderr ---

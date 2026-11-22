@@ -17,6 +17,7 @@ class action_literals:
 
     red_threshold = 1.96 #two-tailed z-test value for alpha=0.05
     yellow_threshold = 3.89 #two-tailed z-test value for alpha=0.0001
+    min_expected = 5 #Cochran's rule: below this expected cell count the nested test uses Fisher exact test
 
     class ansicolors:
         HEADER = '\033[95m'
@@ -49,6 +50,11 @@ class action_literals:
 
         RESET = "\033[0m"
 
+        # color + style, readable also for color-blind users and without colors
+        RED_STRIKETHROUGH = '\033[9;31m'
+        YELLOW_UNDERLINE  = '\033[4;93m'
+        GREEN_BOLD        = '\033[1;32m'
+
 
 
     class texcolors:
@@ -59,9 +65,9 @@ class action_literals:
 
     bcolors = ansicolors
 
-    canbeignored = bcolors.RED
-    mightbeignored = bcolors.YELLOW
-    cannotbeignored = bcolors.GREEN
+    canbeignored = bcolors.RED_STRIKETHROUGH
+    mightbeignored = bcolors.YELLOW_UNDERLINE
+    cannotbeignored = bcolors.GREEN_BOLD
     ENDC = bcolors.ENDC
 
 
@@ -69,10 +75,16 @@ class action_literals:
     def __init__(self, clm, color_style=None):
         self.clm2 = clm
         self.row_count = clm.data['rows_count']
-        colors = self.texcolors if color_style=='TeX' else self.bcolors
-        self.canbeignored    = colors.RED
-        self.mightbeignored  = colors.YELLOW
-        self.cannotbeignored = colors.GREEN
+        if color_style == 'TeX':
+            self.canbeignored    = self.texcolors.RED
+            self.mightbeignored  = self.texcolors.YELLOW
+            self.cannotbeignored = self.texcolors.GREEN
+            colors = self.texcolors
+        else:
+            self.canbeignored    = self.bcolors.RED_STRIKETHROUGH
+            self.mightbeignored  = self.bcolors.YELLOW_UNDERLINE
+            self.cannotbeignored = self.bcolors.GREEN_BOLD
+            colors = self.bcolors
         self.ENDC            = colors.ENDC
 
    
@@ -120,11 +132,11 @@ class action_literals:
                     cnt=0
                     for val_idx in var_val_list:
                         if self.debug:
-                            if str(datalabels['catnames'][idx][val_idx]) == ignore_cat and v==cedent:
+                            if str(datalabels['catnames'][idx][val_idx]) == ignore_cat and v==cedent and datalabels['varname'][idx] == ignore_var:
                                 print(f"...i... Varname: {datalabels['varname'][idx]} Category: {datalabels['catnames'][idx][val_idx]} will be ignored.")
                             else:
                                 print(f"...i... Varname: {datalabels['varname'][idx]} Category: {datalabels['catnames'][idx][val_idx]} will be APPLIED.")
-                        if not(str(datalabels['catnames'][idx][val_idx]) == ignore_cat and v == cedent):
+                        if not(str(datalabels['catnames'][idx][val_idx]) == ignore_cat and v == cedent and datalabels['varname'][idx] == ignore_var):
                             varval = varval | self.clm2.data['dm'][idx][val_idx]
                             cnt+=1
                     if cnt>0:
@@ -140,8 +152,11 @@ class action_literals:
         ff.insert(3,((maxval-cedents['ante'])&(maxval-cedents['succ'])&cedents['cond']).bit_count())
         return ff
 
-    def calc_z_score(self,ff1,ff2):
-        # calculate CUSTOM METRIC for rules: z-score for two sample test of equality of the mean in two binomial distributions
+    def calc_z_score(self,ff1,ff2,nested=True):
+        # z-score comparing the confidences of two rules
+        # nested=True  (antecedent/condition): nested test - two-sample z-test of the narrower rule vs. the disjoint
+        #              remainder, or Fisher exact test (as equivalent |z|) when an expected cell count < min_expected
+        # nested=False (succedent): original two-sample z-test of two binomial distributions (same rows, not nested)
         p1 = None
         if (ff1[0] + ff1[1])>0:
             p1 = ff1[0] / (ff1[0] + ff1[1])
@@ -155,9 +170,28 @@ class action_literals:
         n1 = ff1[0] + ff1[1]
         n2 = ff2[0] + ff2[1]
 
-        p = (n1 * p1 + n2 * p2) / (n1 + n2)
+        p = (n1 * p1 + n2 * p2) / (n1 + n2) if n1 + n2 > 0 else 0
         z = None
-        if n1>0 and n2>0:
+        if nested:
+            # rows of the narrower rule are a subset of the wider one: test the narrower rule
+            # against the disjoint remainder (wider minus narrower)
+            nar, wid = (ff1, ff2) if n1 <= n2 else (ff2, ff1)
+            a1 = nar[0]
+            b1 = nar[1]
+            a3 = wid[0] - a1
+            b3 = wid[1] - b1
+            nn = a1 + b1  # number of rows in the narrower rule
+            nr = a3 + b3  # number of rows in the remainder
+            z = 0
+            if nn > 0 and nr > 0:
+                pr = (a1 + a3) / (nn + nr)
+                if min(nn * pr, nn * (1 - pr), nr * pr, nr * (1 - pr)) >= self.min_expected:
+                    z = abs(a1 / nn - a3 / nr) / math.sqrt(pr * (1 - pr) * (1 / nn + 1 / nr))
+                else:
+                    _, p_fisher = scipy.stats.fisher_exact([[a1, b1], [a3, b3]])
+                    z = scipy.stats.norm.isf(p_fisher / 2)
+                z = -z if p1 < p2 else z
+        elif n1>0 and n2>0:
             if p * (1 - p) * (1 / n1 + 1 / n2) >0:
                 z = (p1 - p2) / math.sqrt(p * (1 - p) * (1 / n1 + 1 / n2))
             else:
@@ -202,13 +236,21 @@ class action_literals:
                     ff_text = ff_text + ' & '
                 vn = datalabels['varname'][idx]
                 tp = self._get_attribute_type(v,vn)
-                ff = self._get_rule_ff(rule_id,v,vn)
                 conf_full = ff_full[0] / (ff_full[0] + ff_full[1])
-                conf = ff[0] / (ff[0] + ff[1])
                 base_full = ff_full[0]
-                base = ff[0]
-                z_score,p_val,pimratioabs = self.calc_z_score(ff_full,ff)
-                if abs(z_score)>self.yellow_threshold:
+                # The only attribute of the succedent is not eligible: omitting it leaves an empty
+                # succedent with confidence 1 by definition, so the comparison has no meaning.
+                only_succ_attr = (v == 'succ' and len(cedent_list) == 1)
+                if not only_succ_attr:
+                    ff = self._get_rule_ff(rule_id,v,vn)
+                    conf = ff[0] / (ff[0] + ff[1])
+                    base = ff[0]
+                    z_score,p_val,pimratioabs = self.calc_z_score(ff_full,ff,nested=(v!='succ'))
+                if only_succ_attr:
+                    if print_details:
+                        print(f"   Var {vn} is the only attribute of the succedent and is not eligible (omitting it gives confidence 1 by definition)")
+                    ff_text = ff_text + vn
+                elif abs(z_score)>self.yellow_threshold:
                     if print_details:
                         print(f"   When Var {self.cannotbeignored}{vn}{self.ENDC} is ignored: {self.cannotbeignored}confidence {conf_full:.3f} -> {conf:.3f}, base {base_full} -> {base}{self.ENDC}, pval {p_val:.5f}, z_score {z_score:.3f}, pimratioabs {pimratioabs:.3f}")
                     ff_text= ff_text + self.cannotbeignored+vn+self.ENDC
@@ -259,7 +301,7 @@ class action_literals:
                     else:
                         conf2 = 0
                     base2=ff2[0]
-                    z_score, p_val,pimratioabs = self.calc_z_score(ff_full, ff2)
+                    z_score, p_val,pimratioabs = self.calc_z_score(ff_full, ff2, nested=(v!='succ'))
                     if val_idx not in eligible_val_list:
                         if print_details:
                             print(f"   ... varname's {vn} category {cn} cannot be ignored due to either single category or the ordinal data type and not eligible (middle) category cannot be thrown out")

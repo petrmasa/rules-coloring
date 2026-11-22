@@ -8,6 +8,10 @@ from action_literals import action_literals
 red_threshold = action_literals.red_threshold
 yellow_threshold = action_literals.yellow_threshold
 
+# safety cap - a derived rule must keep conf (and lift, if the task has it) above the task threshold
+# lowered by this drift; otherwise the step is reverted and chaining stops for this rule
+allowed_drift = 0.10
+
 
 
 def prune_by_colors(clm_output, prune_yellow=False):
@@ -148,6 +152,16 @@ def derive_and_prune(clm_output, prune_yellow=False):
     phase2_detail = {}  # rule_no -> (by_id, attr)
     derived_ids = []
 
+    # safety cap: floors derived from the task quantifiers (lift is the 'aad' quantifier + 1)
+    task_quantifiers = {k.lower(): v for k, v in clm_output.quantifiers.items()}
+    conf_low = None
+    if 'conf' in task_quantifiers:
+        conf_low = task_quantifiers['conf'] * (1 - allowed_drift)
+    lift_low = None
+    if 'aad' in task_quantifiers:
+        lift_low = (1 + task_quantifiers['aad']) * (1 - allowed_drift)
+    drift_stopped = {}  # rule_no -> (attr, conf, lift) of the rejected derived rule
+
     while True:
         changed = False
         current_count = clm_output.get_rulecount()
@@ -155,7 +169,7 @@ def derive_and_prune(clm_output, prune_yellow=False):
 
         for i in range(current_count):
             rule_no = i + 1
-            if rule_no in all_suppress:
+            if rule_no in all_suppress or rule_no in drift_stopped:
                 continue
 
             ante = clm_output.get_rule_variables(rule_no, 'ante', get_names=True)
@@ -198,6 +212,14 @@ def derive_and_prune(clm_output, prune_yellow=False):
                 phase2_detail[rule_no] = (simpler_id, first_red)
                 all_suppress.add(rule_no)
             else:
+                # safety cap: check the derived rule before injecting it
+                ff_new = al._get_rule_ff(rule_id=rule_no, cedent='ante', ignore_var=first_red)
+                conf_new = ff_new[0] / (ff_new[0] + ff_new[1])
+                lift_new = conf_new / ((ff_new[0] + ff_new[2]) / sum(ff_new))
+                if (conf_low is not None and conf_new < conf_low) or (lift_low is not None and lift_new < lift_low):
+                    # keep the current rule (last one that passed) and stop chaining for it
+                    drift_stopped[rule_no] = (first_red, conf_new, lift_new)
+                    continue
                 new_id = _inject_derived_rule(clm_output, rule_no, first_red)
                 derived_ids.append(new_id)
                 phase2_ignore.add(rule_no)
@@ -224,6 +246,13 @@ def derive_and_prune(clm_output, prune_yellow=False):
             print(f"  Rule {did:>4}: derived from rule "
                   f"{ext.get('derived_from', '?')} "
                   f"by removing {ext.get('derived_by_removing', [])}")
+
+    if drift_stopped:
+        conf_low_text = f"{conf_low:.3f}" if conf_low is not None else "-"
+        lift_low_text = f"{lift_low:.3f}" if lift_low is not None else "-"
+        print(f"\nStopped for big drift (conf_low={conf_low_text}, lift_low={lift_low_text}); these rules were kept:")
+        for rno, (attr, conf_new, lift_new) in sorted(drift_stopped.items()):
+            print(f"  Rule {rno:>4}: removing {attr} would give conf {conf_new:.3f}, lift {lift_new:.3f}")
 
     if phase2_detail:
         print("\nPhase 2 suppression/insertion chain:")

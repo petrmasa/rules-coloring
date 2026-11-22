@@ -1,6 +1,6 @@
 Cleverminer version  1.2.6
-Python 3.12.3 | Linux 6.8.0-124-generic
-Integer loop benchmark: 73 Mops/s
+Python 3.12.3 | Linux 6.8.0-149-generic
+Integer loop benchmark: 80 Mops/s
 
 Table 2: Rule re-evaluation speed (coloring)
 
@@ -16,16 +16,14 @@ Starting to mine rules.
   0%|                                                    |Elapsed Time: 0:00:00
   0%|                                                    |Elapsed Time: 0:00:00
   1%|                                                    |Elapsed Time: 0:00:00
-  1%|                                                    |Elapsed Time: 0:00:00
   1%|#                                                   |Elapsed Time: 0:00:00
   1%|#                                                   |Elapsed Time: 0:00:00
   2%|#                                                   |Elapsed Time: 0:00:00
   2%|#                                                   |Elapsed Time: 0:00:00
   2%|#                                                   |Elapsed Time: 0:00:00
   2%|#                                                   |Elapsed Time: 0:00:00
+  3%|#                                                   |Elapsed Time: 0:00:00
   3%|#                                                   |Elapsed Time: 0:00:01
-  3%|#                                                   |Elapsed Time: 0:00:01
-  4%|##                                                  |Elapsed Time: 0:00:01
   4%|##                                                  |Elapsed Time: 0:00:01
   4%|##                                                  |Elapsed Time: 0:00:01
   4%|##                                                  |Elapsed Time: 0:00:01
@@ -34,41 +32,37 @@ Starting to mine rules.
   5%|##                                                  |Elapsed Time: 0:00:01
   5%|###                                                 |Elapsed Time: 0:00:01
   5%|###                                                 |Elapsed Time: 0:00:01
-  6%|###                                                 |Elapsed Time: 0:00:02
-  6%|###                                                 |Elapsed Time: 0:00:02
+  6%|###                                                 |Elapsed Time: 0:00:01
+  6%|###                                                 |Elapsed Time: 0:00:01
   6%|###                                                 |Elapsed Time: 0:00:02
   6%|###                                                 |Elapsed Time: 0:00:02
   6%|###                                                 |Elapsed Time: 0:00:02
   7%|###                                                 |Elapsed Time: 0:00:02
   7%|####                                                |Elapsed Time: 0:00:02
-  7%|####                                                |Elapsed Time: 0:00:02
   8%|####                                                |Elapsed Time: 0:00:02
   8%|####                                                |Elapsed Time: 0:00:02
-  8%|####                                                |Elapsed Time: 0:00:03
-  8%|####                                                |Elapsed Time: 0:00:03
+  8%|####                                                |Elapsed Time: 0:00:02
+  8%|####                                                |Elapsed Time: 0:00:02
+  9%|####                                                |Elapsed Time: 0:00:02
   9%|####                                                |Elapsed Time: 0:00:03
- 10%|#####                                               |Elapsed Time: 0:00:03
  10%|#####                                               |Elapsed Time: 0:00:03
  10%|#####                                               |Elapsed Time: 0:00:03
  10%|#####                                               |Elapsed Time: 0:00:03
  10%|#####                                               |Elapsed Time: 0:00:03
  11%|#####                                               |Elapsed Time: 0:00:03
  12%|######                                              |Elapsed Time: 0:00:03
- 12%|######                                              |Elapsed Time: 0:00:04
- 13%|######                                              |Elapsed Time: 0:00:04
- 14%|#######                                             |Elapsed Time: 0:00:04
- 15%|#######                                             |Elapsed Time: 0:00:04
- 16%|########                                            |Elapsed Time: 0:00:04
+ 12%|######                                              |Elapsed Time: 0:00:03
+ 14%|#######                                             |Elapsed Time: 0:00:03
+ 15%|#######                                             |Elapsed Time: 0:00:03
+ 20%|##########                                          |Elapsed Time: 0:00:03
  22%|###########                                         |Elapsed Time: 0:00:04
  24%|############                                        |Elapsed Time: 0:00:04
- 25%|#############                                       |Elapsed Time: 0:00:04
  28%|##############                                      |Elapsed Time: 0:00:04
  29%|###############                                     |Elapsed Time: 0:00:04
- 31%|################                                    |Elapsed Time: 0:00:04
- 56%|#############################                       |Elapsed Time: 0:00:04
+ 33%|#################                                   |Elapsed Time: 0:00:04
 100%|####################################################|Elapsed Time: 0:00:04
-Done. Total verifications : 1906, rules 53, times: prep 1.24sec, processing 5.10sec
-  accidents     rows= 538,989  rules=  53  re-evals=  672  (12.7/rule)  time/call=  2404µs  total=   1757ms  rules/s=     30  re-evals/s=    382
+Done. Total verifications : 1906, rules 53, times: prep 1.37sec, processing 4.54sec
+  accidents     rows= 538,989  rules=  53  re-evals=  619  (11.7/rule)  time/call=  2267µs  total=   1548ms  rules/s=     34  re-evals/s=    400
 Cleverminer version 1.2.6.
 Starting data preparation ...
 Automatically reordering numeric categories ...
@@ -87,8 +81,8 @@ Starting to mine rules.
  20%|##########                                          |Elapsed Time: 0:00:00
  25%|#############                                       |Elapsed Time: 0:00:00
 100%|####################################################|Elapsed Time: 0:00:00
-Done. Total verifications : 2071, rules 207, times: prep 0.01sec, processing 0.38sec
-  titanic       rows=     889  rules= 207  re-evals= 2713  (13.1/rule)  time/call=     5µs  total=    103ms  rules/s=  2,017  re-evals/s= 26,434
+Done. Total verifications : 2071, rules 207, times: prep 0.01sec, processing 0.37sec
+  titanic       rows=     889  rules= 207  re-evals= 2506  (12.1/rule)  time/call=     5µs  total=    336ms  rules/s=    616  re-evals/s=  7,463
 Cleverminer version 1.2.6.
 Starting data preparation ...
 Automatically reordering numeric categories ...
@@ -103,8 +97,8 @@ Starting to mine rules.
  25%|#############                                       |Elapsed Time: 0:00:00
  30%|###############                                     |Elapsed Time: 0:00:00
 100%|####################################################|Elapsed Time: 0:00:00
-Done. Total verifications : 63, rules 63, times: prep 0.02sec, processing 0.24sec
-  diabetes      rows=     768  rules=  63  re-evals=  511  (8.1/rule)  time/call=     5µs  total=     17ms  rules/s=  3,691  re-evals/s= 29,940
+Done. Total verifications : 63, rules 63, times: prep 0.02sec, processing 0.23sec
+  diabetes      rows=     768  rules=  63  re-evals=  448  (7.1/rule)  time/call=     4µs  total=     15ms  rules/s=  4,309  re-evals/s= 30,641
 Cleverminer version 1.2.6.
 Starting data preparation ...
 Automatically reordering numeric categories ...
@@ -123,14 +117,14 @@ Starting to mine rules.
  11%|#####                                               |Elapsed Time: 0:00:00
  14%|#######                                             |Elapsed Time: 0:00:00
  19%|##########                                          |Elapsed Time: 0:00:00
- 21%|##########                                          |Elapsed Time: 0:00:00
- 23%|############                                        |Elapsed Time: 0:00:00
+ 22%|###########                                         |Elapsed Time: 0:00:00
+ 24%|############                                        |Elapsed Time: 0:00:00
  26%|#############                                       |Elapsed Time: 0:00:00
- 31%|################                                    |Elapsed Time: 0:00:00
- 47%|########################                            |Elapsed Time: 0:00:00
+ 33%|#################                                   |Elapsed Time: 0:00:00
+ 60%|###############################                     |Elapsed Time: 0:00:00
 100%|####################################################|Elapsed Time: 0:00:00
-Done. Total verifications : 11392, rules 55, times: prep 0.05sec, processing 0.88sec
-  loans         rows=   4,269  rules=  55  re-evals=  705  (12.8/rule)  time/call=    15µs  total=     34ms  rules/s=  1,628  re-evals/s= 20,862
+Done. Total verifications : 11392, rules 55, times: prep 0.05sec, processing 0.82sec
+  loans         rows=   4,269  rules=  55  re-evals=  650  (11.8/rule)  time/call=    14µs  total=     52ms  rules/s=  1,062  re-evals/s= 12,545
 
 --- stderr ---
 /home/petemm/clm_coloring/repo/lib/datasets.py:68: DtypeWarning: Columns (0: Casualties, 1: District2+) have mixed types. Specify dtype option on import or set low_memory=False.
